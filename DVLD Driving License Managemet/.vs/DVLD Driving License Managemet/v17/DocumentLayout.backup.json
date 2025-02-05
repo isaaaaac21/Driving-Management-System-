@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{581CF6EB-0F99-4320-8FB8-CFBC91A8ACDD}|..\\DvldBusinessLayer\\DvldBusinessLayer.csproj|d:\\f things\\programming\\fundamentals\\after course 13\\c#\\projects\\driving license management system project\\dvldbusinesslayer\\application classes\\clslocaldrivinglicenseapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\usercontrols\\ctrldrivingelicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:usercontrols\\ctrldrivingelicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\usercontrols\\ctrldrivingelicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:usercontrols\\ctrldrivingelicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\fundamentals\\after course 13\\c#\\projects\\driving license management system project\\dvld driving license managemet\\tests\\frmtestsappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:tests\\frmtestsappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{581CF6EB-0F99-4320-8FB8-CFBC91A8ACDD}|..\\DvldBusinessLayer\\DvldBusinessLayer.csproj|d:\\f things\\programming\\fundamentals\\after course 13\\c#\\projects\\driving license management system project\\dvldbusinesslayer\\test classes\\clstestappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{581CF6EB-0F99-4320-8FB8-CFBC91A8ACDD}|..\\DvldBusinessLayer\\DvldBusinessLayer.csproj|d:\\f things\\programming\\fundamentals\\after course 13\\c#\\projects\\driving license management system project\\dvldbusinesslayer\\test classes\\clstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0322F816-FB9F-4B31-8968-1193C3B95D6C}|..\\DVLDataAccessLayer\\DVLDataAccessLayer.csproj|d:\\f things\\programming\\fundamentals\\after course 13\\c#\\projects\\driving license management system project\\dvldataaccesslayer\\tests data access\\clstestappointmentsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\tests\\frmtestsappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:tests\\frmtestsappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0322F816-FB9F-4B31-8968-1193C3B95D6C}|..\\DVLDataAccessLayer\\DVLDataAccessLayer.csproj|d:\\f things\\programming\\fundamentals\\after course 13\\c#\\projects\\driving license management system project\\dvldataaccesslayer\\tests data access\\clstestdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\fundamentals\\after course 13\\c#\\projects\\driving license management system project\\dvld driving license managemet\\applications\\driving license apps\\frmndla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\driving license apps\\frmndla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\fundamentals\\after course 13\\c#\\projects\\driving license management system project\\dvld driving license managemet\\tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\fundamentals\\after course 13\\c#\\projects\\driving license management system project\\dvld driving license managemet\\tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:tests\\frmtaketest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\tests\\frmscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:tests\\frmscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\tests\\frmscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:tests\\frmscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T13:56:30.961Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsLocalDrivingLicenseApp.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DvldBusinessLayer\\Application Classes\\clsLocalDrivingLicenseApp.cs",
+              "RelativeDocumentMoniker": "..\\DvldBusinessLayer\\Application Classes\\clsLocalDrivingLicenseApp.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DvldBusinessLayer\\Application Classes\\clsLocalDrivingLicenseApp.cs",
+              "RelativeToolTip": "..\\DvldBusinessLayer\\Application Classes\\clsLocalDrivingLicenseApp.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAIAwwE4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T13:44:49.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "clsTests.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DvldBusinessLayer\\Test Classes\\clsTests.cs",
+              "RelativeDocumentMoniker": "..\\DvldBusinessLayer\\Test Classes\\clsTests.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DvldBusinessLayer\\Test Classes\\clsTests.cs",
+              "RelativeToolTip": "..\\DvldBusinessLayer\\Test Classes\\clsTests.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA7wC0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T10:53:06.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "clsTestAppointmentsDataAccess.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLDataAccessLayer\\Tests Data Access\\clsTestAppointmentsDataAccess.cs",
+              "RelativeDocumentMoniker": "..\\DVLDataAccessLayer\\Tests Data Access\\clsTestAppointmentsDataAccess.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLDataAccessLayer\\Tests Data Access\\clsTestAppointmentsDataAccess.cs",
+              "RelativeToolTip": "..\\DVLDataAccessLayer\\Tests Data Access\\clsTestAppointmentsDataAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T08:20:26.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmTestsAppointment.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmTestsAppointment.cs",
+              "RelativeDocumentMoniker": "Tests\\FrmTestsAppointment.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmTestsAppointment.cs",
+              "RelativeToolTip": "Tests\\FrmTestsAppointment.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAEwGgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T09:18:05.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "clsTestAppointment.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DvldBusinessLayer\\Test Classes\\clsTestAppointment.cs",
+              "RelativeDocumentMoniker": "..\\DvldBusinessLayer\\Test Classes\\clsTestAppointment.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DvldBusinessLayer\\Test Classes\\clsTestAppointment.cs",
+              "RelativeToolTip": "..\\DvldBusinessLayer\\Test Classes\\clsTestAppointment.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAhwD0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T08:02:47.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmTestsAppointment.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmTestsAppointment.cs",
+              "RelativeDocumentMoniker": "Tests\\FrmTestsAppointment.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmTestsAppointment.cs [Design]",
+              "RelativeToolTip": "Tests\\FrmTestsAppointment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T20:32:24.9Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "clsTestDataAccess.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLDataAccessLayer\\Tests Data Access\\clsTestDataAccess.cs",
+              "RelativeDocumentMoniker": "..\\DVLDataAccessLayer\\Tests Data Access\\clsTestDataAccess.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLDataAccessLayer\\Tests Data Access\\clsTestDataAccess.cs",
+              "RelativeToolTip": "..\\DVLDataAccessLayer\\Tests Data Access\\clsTestDataAccess.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAwwHgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T20:36:40.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmNDLA.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmNDLA.cs",
+              "RelativeDocumentMoniker": "Applications\\Driving License Apps\\FrmNDLA.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmNDLA.cs",
+              "RelativeToolTip": "Applications\\Driving License Apps\\FrmNDLA.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAApwPYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T11:50:15.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FrmScheduleTest.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmScheduleTest.cs",
+              "RelativeDocumentMoniker": "Tests\\FrmScheduleTest.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmScheduleTest.cs",
+              "RelativeToolTip": "Tests\\FrmScheduleTest.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwEkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T11:13:36.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmScheduleTest.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmScheduleTest.cs",
+              "RelativeDocumentMoniker": "Tests\\FrmScheduleTest.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmScheduleTest.cs [Design]",
+              "RelativeToolTip": "Tests\\FrmScheduleTest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T11:04:32.475Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmTakeTest.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmTakeTest.cs",
+              "RelativeDocumentMoniker": "Tests\\FrmTakeTest.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmTakeTest.cs",
+              "RelativeToolTip": "Tests\\FrmTakeTest.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwE8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T10:24:12.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmTakeTest.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmTakeTest.cs",
+              "RelativeDocumentMoniker": "Tests\\FrmTakeTest.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\Tests\\FrmTakeTest.cs [Design]",
+              "RelativeToolTip": "Tests\\FrmTakeTest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T10:11:29.166Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ctrlDrivingeLicenseInfo.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\UserControls\\ctrlDrivingeLicenseInfo.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrlDrivingeLicenseInfo.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\UserControls\\ctrlDrivingeLicenseInfo.cs",
+              "RelativeToolTip": "UserControls\\ctrlDrivingeLicenseInfo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAEwBUAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T20:58:40.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ctrlDrivingeLicenseInfo.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\UserControls\\ctrlDrivingeLicenseInfo.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrlDrivingeLicenseInfo.cs",
+              "ToolTip": "D:\\F things\\Programming\\Fundamentals\\After course 13\\c#\\Projects\\Driving License Management System project\\DVLD Driving License Managemet\\UserControls\\ctrlDrivingeLicenseInfo.cs [Design]",
+              "RelativeToolTip": "UserControls\\ctrlDrivingeLicenseInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T20:34:07.412Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
