@@ -1,5 +1,6 @@
 ﻿using DVLDataAccessLayer.Application_Data_Access_Classes;
 using DVLDataAccessLayer.License_Data_Access_Classes;
+using DvldBusinessLayer.Test_Classes;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -24,11 +25,11 @@ namespace DvldBusinessLayer.Application_Classes
             LicenseClassID = -1;
         }
         clsLocalDrivingLicenseApp(int appID, int perID, DateTime AppDate, int typeID, int status, DateTime LastStatus, decimal Fees, int userID,
-            int LDLAID, int licClsID, int passedTests ) : base(appID, perID, AppDate, typeID, status, LastStatus, Fees, userID )
+            int LDLAID, int licClsID ) : base(appID, perID, AppDate, typeID, status, LastStatus, Fees, userID )
         {
             LDLA_ID = LDLAID;
             LicenseClassID = licClsID;
-            PassedTests = passedTests; 
+
         }
 
         static public DataTable GetAllDrivingLicenseApps()
@@ -60,10 +61,6 @@ namespace DvldBusinessLayer.Application_Classes
         }
 
 
-        //static public int FindAppIDByClsAndNationalNo()
-        //{
-        // I need to find the ApplicationID by the selected row info, then I will make the status of that application cancel
-        //}
 
         static public bool CancelAnLDLAByID(int ID)
         {
@@ -72,7 +69,7 @@ namespace DvldBusinessLayer.Application_Classes
 
         static public  clsLocalDrivingLicenseApp FindLDLA(int ID)
         {
-            int appID = -1, PerID = -1, typeID = -1, appStatus = -1, userID = -1, LCID =  -1, passedTests = 0  ;
+            int appID = -1, PerID = -1, typeID = -1, appStatus = -1, userID = -1, LCID =  -1 ;
             DateTime dt = DateTime.Now, lastStatus = DateTime.Now;
             decimal fees = 0;
 
@@ -86,13 +83,19 @@ namespace DvldBusinessLayer.Application_Classes
 
         static public bool DeleteLDLA(clsLocalDrivingLicenseApp LDLA) 
         {
-            if (clsLDLADataAccess.DeleteLDLA(LDLA.LDLA_ID)) 
+            if (clsTests.DeleteAllTestsByLDLAID(LDLA.LDLA_ID) && clsTestAppointment.DeleteAllAppointmentsOfLDLA(LDLA.LDLA_ID) )
             {
-                if (clsApplicationDataAccess.DeleteApp(LDLA._ApplicationID)) return true; 
+                if (clsLDLADataAccess.DeleteLDLA(LDLA.LDLA_ID) && clsApplicationDataAccess.DeleteApp(LDLA._ApplicationID) ) return true;
+
             }
+            //I need to delete from the tests table also
 
             return false; 
         }
+
+
+
+
 
         public bool Save()
         {

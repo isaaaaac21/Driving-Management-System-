@@ -490,5 +490,20 @@
   <ItemGroup>
     <Folder Include="Tests\ManageTestTypes\TestTypes\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Writing1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Road2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DriverLicenseSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DriverImg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

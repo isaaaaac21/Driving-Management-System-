@@ -19,6 +19,7 @@ namespace DVLD_Driving_License_Managemet.Tests
         public FrmTakeTest(clsLocalDrivingLicenseApp app, clsTestAppointment testapp)
         {
             InitializeComponent();
+            clsDesign.ApplyRoundedCorners(this); 
             _CurrentApp = app;
             _CurrAppointment = testapp; 
 
@@ -64,7 +65,15 @@ namespace DVLD_Driving_License_Managemet.Tests
         {
             this.Close(); 
         }
-        private bool LockAndSaveTestAppointment()
+
+        private void DisableButtonSave()
+        {
+            btnSave.Enabled = false; 
+        }
+
+        //this will make the appointment locked so that we know that has been taken
+        // and the save will just udpate the appointment after taken its test (which means it will be locked)
+        private bool LockAndUpdateTestAppointment()
         {
             _CurrAppointment.isLocked = true;
             if (_CurrAppointment.Save()) return true;
@@ -84,9 +93,10 @@ namespace DVLD_Driving_License_Managemet.Tests
             {
                 if (_CurrTest.Save())
                 {
-                    if(LockAndSaveTestAppointment())
+                    if(LockAndUpdateTestAppointment())
                     {
-                        clsDesign._ShowSuccessMessage("Test Has been Taken successully !!!"); 
+                        clsDesign._ShowSuccessMessage("Test Has been Taken successully !!!");
+                        DisableButtonSave();
                     }
                 }
                 else

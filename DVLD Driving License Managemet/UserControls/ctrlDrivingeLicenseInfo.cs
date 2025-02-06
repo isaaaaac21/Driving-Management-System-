@@ -1,5 +1,6 @@
 ﻿using DvldBusinessLayer;
 using DvldBusinessLayer.Application_Classes;
+using DvldBusinessLayer.Test_Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,7 +39,9 @@ namespace DVLD_Driving_License_Managemet.UserControls
             lblApplicant.Text = clsPersons.FindPerson(_CurrentLDLA._ApplicantPersonID).FirstName;
             lblDate.Text = _CurrentLDLA._ApplicationDate.ToShortDateString();
             lblStattusDate.Text = _CurrentLDLA._LastStatusDate.ToShortDateString();
-            lblUser.Text = clsUsers.Find(_CurrentLDLA._UserCreatedID).UserName; 
+            lblUser.Text = clsUsers.Find(_CurrentLDLA._UserCreatedID).UserName;
+
+            lblTests.Text = clsTests.GetTotalPassedTests(_CurrentLDLA.LDLA_ID).ToString() + "/3"; 
         }
 
 

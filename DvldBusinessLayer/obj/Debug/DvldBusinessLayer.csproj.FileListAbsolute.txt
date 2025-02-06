@@ -34,3 +34,12 @@ D:\F things\Programming\GITHUB Reps\DvldBusinessLayer\obj\Debug\DvldBusinessLaye
 D:\F things\Programming\GITHUB Reps\DvldBusinessLayer\obj\Debug\DvldBusi.15D31B8F.Up2Date
 D:\F things\Programming\GITHUB Reps\DvldBusinessLayer\obj\Debug\DvldBusinessLayer.dll
 D:\F things\Programming\GITHUB Reps\DvldBusinessLayer\obj\Debug\DvldBusinessLayer.pdb
+D:\F things\Programming\MyProject\DvldBusinessLayer\bin\Debug\DvldBusinessLayer.dll
+D:\F things\Programming\MyProject\DvldBusinessLayer\bin\Debug\DvldBusinessLayer.pdb
+D:\F things\Programming\MyProject\DvldBusinessLayer\bin\Debug\DVLDataAccessLayer.dll
+D:\F things\Programming\MyProject\DvldBusinessLayer\bin\Debug\DVLDataAccessLayer.pdb
+D:\F things\Programming\MyProject\DvldBusinessLayer\obj\Debug\DvldBusinessLayer.csproj.AssemblyReference.cache
+D:\F things\Programming\MyProject\DvldBusinessLayer\obj\Debug\DvldBusinessLayer.csproj.CoreCompileInputs.cache
+D:\F things\Programming\MyProject\DvldBusinessLayer\obj\Debug\DvldBusi.15D31B8F.Up2Date
+D:\F things\Programming\MyProject\DvldBusinessLayer\obj\Debug\DvldBusinessLayer.dll
+D:\F things\Programming\MyProject\DvldBusinessLayer\obj\Debug\DvldBusinessLayer.pdb

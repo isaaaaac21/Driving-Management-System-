@@ -49,19 +49,36 @@ namespace DVLD_Driving_License_Managemet.Applications.ManageTestTypes.TestTypes
             pbTypePic.Image = Resources.Glasses; 
 
         }
+        private void _InitializeWritingTestForm()
+        {
+            lblTitle.Text = "Writing Test Appointment";
+            pbTypePic.Image = Resources.Writing; 
+        }
+
+        private void _InitializeStreetTestForm()
+        {
+            lblTitle.Text = "Street Test Appointment";
+            pbTypePic.Image = Resources.Road;
+        }
+
         private void _InitializeFormAccordingToTestType()
         {
             if (_TestType == clsTestTypes.VISION)
             {
-                _InitializeVisionTestForm(); 
+                _InitializeVisionTestForm();
             }
-
+            else if (_TestType == clsTestTypes.WRITING)
+            {
+                _InitializeWritingTestForm();
+            }
+            else
+                _InitializeStreetTestForm();
             _PopulateDataGrid(); 
         }
 
-        private bool _TestAppointmentExists()
+        private bool _TestAppointmentIsActive()
         {
-            if (clsTestAppointment.TestAppExists(_CurrentApp.LDLA_ID, _TestType))
+            if (clsTestAppointment.TestAppIsActive(_CurrentApp.LDLA_ID, _TestType))
             {
                 clsDesign._ShowErrorMessage("An active Appointment for this test  already exists !!!");
                 return true; 
@@ -73,22 +90,37 @@ namespace DVLD_Driving_License_Managemet.Applications.ManageTestTypes.TestTypes
         {
             if (testApp.isLocked)
             {
-                clsDesign._ShowErrorMessage("The test of this appointment has been already taken XXXX");
-                return false; 
+                clsDesign._ShowErrorMessage("The test of this appointment has been already taken");
+                return true; 
             }
 
-            return true; 
+            return false; 
         }
 
+        //private bool CheckLastTestResult()
+        //{
+        //    clsTests LastTest = clsTests.GetTheLastTestOfApplication(_CurrentApp.LDLA_ID, _TestType);
+        //    if (TestPassed(LastTest) return 
+        //}
 
-        private bool TestPassed()
+        private bool TestPassed(clsTests LastTest)
         {
-           if (clsTests.TestPassed(_TestType, _CurrentApp.LDLA_ID))
+           if (LastTest == null) return false; 
+           if (LastTest.Result)
             {
                 clsDesign._ShowErrorMessage("This Type of test has already been passed"); 
                 return true; 
             }
 
+            return false; 
+        }
+        private bool TestFailed(clsTests LastTest)
+        {
+            if (LastTest == null) return false; 
+            if (!LastTest.Result)
+            {
+                return true; 
+            }
             return false; 
         }
         private void FrmTestsAppointment_Load(object sender, EventArgs e)
@@ -103,8 +135,20 @@ namespace DVLD_Driving_License_Managemet.Applications.ManageTestTypes.TestTypes
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (_TestAppointmentExists() || TestPassed()) return; 
-            FrmScheduleTest frmSchedTest = new FrmScheduleTest(_CurrentApp, _TestType);
+            clsTests LastTest = clsTests.GetTheLastTestOfApplication(_CurrentApp.LDLA_ID, _TestType);
+
+            FrmScheduleTest frmSchedTest;
+            if (_TestAppointmentIsActive() || TestPassed(LastTest) ) return;
+            else if (TestFailed(LastTest))
+            {
+                //If the last test is failed, the retake test appointment will be opened by the add button
+                frmSchedTest = new FrmScheduleTest(_CurrentApp, _TestType, null, true);
+            }
+            else
+            {
+                 // a new appointment form will be opened 
+                 frmSchedTest = new FrmScheduleTest(_CurrentApp, _TestType);
+            }
             frmSchedTest.FormClosed += FrmSchedTest_FormClosed;
             frmSchedTest.ShowDialog(); 
         }
@@ -125,7 +169,7 @@ namespace DVLD_Driving_License_Managemet.Applications.ManageTestTypes.TestTypes
         private void tsmTakeTest_Click(object sender, EventArgs e)
         {
             clsTestAppointment testApp = _ReturnSelectedRow();
-            if (!_TestAppointmentIsLocked(testApp)) return;
+            if (_TestAppointmentIsLocked(testApp)) return;
 
 
 

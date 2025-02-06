@@ -16,19 +16,20 @@ namespace DVLD_Driving_License_Managemet.Tests
 {
     public partial class FrmScheduleTest : Form
     {
-        public FrmScheduleTest(clsLocalDrivingLicenseApp app, int typeTest, clsTestAppointment Testapp = null)
+        public FrmScheduleTest(clsLocalDrivingLicenseApp app, int typeTest, /*this object for the edit mode*/ clsTestAppointment Testapp = null, bool Retake = false)
         {
             InitializeComponent();
             clsDesign.ApplyRoundedCorners(this);
             _TestType = typeTest;
             _CurrentApp = app;
-            _NewTest = Testapp == null ? new clsTestAppointment() : Testapp;
+            _NewTestAppointment = Testapp == null ? new clsTestAppointment() : Testapp;
+            _RetakeTest = Retake; 
         }
 
         private int _TestType;
         private clsLocalDrivingLicenseApp _CurrentApp = new clsLocalDrivingLicenseApp();
-        private clsTestAppointment _NewTest = new clsTestAppointment(); 
-
+        private clsTestAppointment _NewTestAppointment = new clsTestAppointment();
+        private bool _RetakeTest = false; 
 
         private void _SetImageAccordingToType()
         {
@@ -36,8 +37,25 @@ namespace DVLD_Driving_License_Managemet.Tests
             else if (_TestType == clsTestTypes.WRITING) pbTypePic.Image = Resources.Writing;
             else pbTypePic.Image = Resources.Road; 
         }
+        private void _InitializeForRetakeTest()
+        {
+            clsApplicationsTypes RetType = clsApplicationsTypes.FindAppType(7);
+            gbRetake.Enabled = true;
+            lblRetAppFees.Text = RetType._AppTypeFees.ToString();
+            lblTotalFees.Text = (clsTestTypes.FindTestTypeByID(_TestType)._TestTypeFees + RetType._AppTypeFees).ToString(); 
+        }
+        private void CheckIfRetakeTest()
+        {
+            if (_RetakeTest)
+            {
+                _InitializeForRetakeTest(); 
+            }
+        }
+
+
         private void _InitializeFormWithData()
         {
+             CheckIfRetakeTest();
             _SetImageAccordingToType(); 
             clsPersons per = clsPersons.FindPerson(_CurrentApp._ApplicantPersonID);
 
@@ -45,22 +63,37 @@ namespace DVLD_Driving_License_Managemet.Tests
             lblLcCls.Text = clsLicenseClass.GetLicenseClassByID(_CurrentApp.LicenseClassID)._Name;
             lblName.Text = per.FirstName + " " + per.LastName;
             dtpAppointment.MinDate = DateTime.Today.AddDays(1); 
-            lblTestTypeFees.Text = clsTestTypes.FindTestTypeByID(_TestType)._TestTypeFees.ToString(); 
+            lblTestTypeFees.Text = clsTestTypes.FindTestTypeByID(_TestType)._TestTypeFees.ToString();
+            lblTrial.Text = clsTests.GetTotalFialedTrialsOfTest(_CurrentApp.LDLA_ID, _TestType).ToString(); 
 
         }
-
+        private void DisableButtonSave()
+        {
+            btnSave.Enabled = false;
+        }
         private void _CreateAppointment()
         {
 
-            _NewTest.TestTypeID = _TestType;
-            _NewTest.LDLAID = _CurrentApp.LDLA_ID;
-            _NewTest.AppointmentDate = dtpAppointment.Value;
-            _NewTest.PaidFees = clsTestTypes.FindTestTypeByID(_TestType)._TestTypeFees;
-            _NewTest.CreatedByUserID = clsCommonThings._MainUser.UserID;
-           
+            _NewTestAppointment.TestTypeID = _TestType;
+            _NewTestAppointment.LDLAID = _CurrentApp.LDLA_ID;
+            _NewTestAppointment.AppointmentDate = dtpAppointment.Value;
+            _NewTestAppointment.PaidFees = clsTestTypes.FindTestTypeByID(_TestType)._TestTypeFees;
+            _NewTestAppointment.CreatedByUserID = clsCommonThings._MainUser.UserID;
             
         }
+        private clsApplication _CreateRetakeApplication()
+        {
+            clsApplication app = new clsApplication();
+            app._ApplicantPersonID = _CurrentApp._ApplicantPersonID;
+            app._ApplicationDate = DateTime.Now;
+            app._ApplicationTypeID = 7;
+            app._ApplicationStatus = 1;
+            app._LastStatusDate = DateTime.Now;
+            app._PaidFees = clsApplicationsTypes.FindAppType(7)._AppTypeFees;
+            app._UserCreatedID = clsCommonThings._MainUser.UserID;
 
+            return app; 
+        }
         private void DisableIfAppIsLocked()
         {
             foreach(Control ctrl in this.Controls)
@@ -71,7 +104,7 @@ namespace DVLD_Driving_License_Managemet.Tests
 
         private void FrmScheduleTest_Load(object sender, EventArgs e)
         {
-            if (_NewTest.TestAppointmentID != -1 && _NewTest.isLocked) DisableIfAppIsLocked(); 
+            if (_NewTestAppointment.TestAppointmentID != -1 && _NewTestAppointment.isLocked) DisableIfAppIsLocked(); 
             _InitializeFormWithData();
         }
 
@@ -80,17 +113,42 @@ namespace DVLD_Driving_License_Managemet.Tests
             this.Close(); 
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private bool _HandleRetakeApp()
         {
-            _CreateAppointment(); 
-            if(_NewTest.Save())
+            clsApplication RetakeApp = _CreateRetakeApplication(); 
+
+            if (!RetakeApp.Save())
             {
-                clsDesign._ShowSuccessMessage("Appointment has been saved successfully :-)"); 
+                clsDesign._ShowErrorMessage("Retake Test Has not been Saved X X X");
+                return false; 
+            }
+            _NewTestAppointment.RetakeTestAppID = RetakeApp._ApplicationID;
+            return true; 
+        }
+
+        private void _CreateAndSaveAppointmen()
+        {
+            _CreateAppointment();
+            if (_NewTestAppointment.Save())
+            {
+                clsDesign._ShowSuccessMessage("Appointment has been saved successfully :-)");
+                DisableButtonSave();
             }
             else
             {
-                clsDesign._ShowErrorMessage("The Appointment has not been saved XXX"); 
+                clsDesign._ShowErrorMessage("The Appointment has not been saved XXX");
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            
+            if (_RetakeTest && !_HandleRetakeApp())
+            {
+                 return; 
+            }
+
+            _CreateAndSaveAppointmen(); 
         }
     }
 }

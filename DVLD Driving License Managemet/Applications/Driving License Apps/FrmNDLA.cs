@@ -1,6 +1,7 @@
 ﻿using DVLD_Driving_License_Managemet.Applications.ManageTestTypes.TestTypes;
 using DvldBusinessLayer;
 using DvldBusinessLayer.Application_Classes;
+using DvldBusinessLayer.Test_Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -129,7 +130,41 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
             _RefreshForm();
         }
 
+        private void DisableAllTestsButtons()
+        {
+            tsmVisTest.Enabled = false;
+            tsmWritingTest.Enabled = false;
+            tsmStreetTest.Enabled = false;
+        }
 
+        private void EnableTestButtonAccordingToPassedTests(int PassedTests)
+        {
+            if (PassedTests == 0) tsmVisTest.Enabled = true;
+            else if (PassedTests == 1) tsmWritingTest.Enabled = true;
+            else if (PassedTests == 2) tsmStreetTest.Enabled = true;
+        }
+        private void TestsEnabling()
+        {
+            DisableAllTestsButtons();
+            clsLocalDrivingLicenseApp app = _ReturnClickedRowLDLA();
+
+
+            if (app._ApplicationStatus == 3) return; /*this mean that the application is canceled so there is no need to enable tests */ 
+            int PassedTests = clsTests.GetTotalPassedTests(app.LDLA_ID);
+
+            EnableTestButtonAccordingToPassedTests(PassedTests); 
+            
+        }
+
+        private bool _LDLAIsAlreadyCanceled(clsLocalDrivingLicenseApp ldla)
+        {
+            if (ldla._ApplicationStatus == clsApplication.STATUS_CANCELED)
+            {
+                clsDesign._ShowErrorMessage("This Application is already canceled !!!");
+                return true; 
+            }
+            return false; 
+        }
 
 
         private void FrmNDLA_Load(object sender, EventArgs e)
@@ -198,14 +233,16 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         private void btnCancel_Click(object sender, EventArgs e)
         {
             clsLocalDrivingLicenseApp LDLA = _ReturnClickedRowLDLA();
-            if (clsLocalDrivingLicenseApp.CancelAnLDLAByID(LDLA.LDLA_ID))
+            if (_LDLAIsAlreadyCanceled(LDLA)) return;
+
+
+            if (clsDesign.ConfirmMessage("Are u sure you want to cancel this application ??"))
             {
-                if (clsDesign.ConfirmMessage("Are u sure you want to cancel this application ??"))
+                if (clsLocalDrivingLicenseApp.CancelAnLDLAByID(LDLA.LDLA_ID))
                 {
                     clsDesign._ShowSuccessMessage("The Application has been canceled successfully :-)");
-                    _RefreshForm(); 
-                }
-                
+                    _RefreshForm();
+                } 
             }
             else
             {
@@ -216,7 +253,7 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         private void btnDelete_Click(object sender, EventArgs e)
         {
             clsLocalDrivingLicenseApp LDLA = _ReturnClickedRowLDLA(); 
-            if (clsDesign.ConfirmMessage("Are you sure you want to delete this application ? "))
+            if (clsDesign.ConfirmMessage("Are you sure you want to delete this application ? \nThis will Delete all tests and appointments of this Application."))
             {
                 if (clsLocalDrivingLicenseApp.DeleteLDLA(LDLA))
                 {
@@ -233,20 +270,98 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
             
         }
 
-        private void tsmVisTest_Click(object sender, EventArgs e)
-        {
-            clsLocalDrivingLicenseApp app = _ReturnClickedRowLDLA();
-
-            FrmTestsAppointment FrmTest = new FrmTestsAppointment(app, clsTestTypes.VISION);
-            FrmTest.ShowDialog();
-
-        }
 
         private void tsmTestSch_MouseEnter(object sender, EventArgs e)
         {
+            TestsEnabling(); 
+            
+        }
+
+  
+        private FrmTestsAppointment _SetTestAppointmentFormAccordingToTestButton(clsLocalDrivingLicenseApp app, ToolStripMenuItem tsm)
+        {
+          
+            if (tsm == tsmVisTest) return  new FrmTestsAppointment(app, clsTestTypes.VISION);
+            else if (tsm == tsmWritingTest) return  new FrmTestsAppointment(app, clsTestTypes.WRITING); 
+            else return new FrmTestsAppointment(app, clsTestTypes.STREET);
+        }
+
+        private void HandleTestsButtons(object sender, EventArgs e)
+        {
+            ToolStripMenuItem Tsm = (ToolStripMenuItem)sender; 
             clsLocalDrivingLicenseApp app = _ReturnClickedRowLDLA();
-            if (app._ApplicationStatus == 3) tsmVisTest.Enabled = false;
-            else tsmVisTest.Enabled = true; 
+
+            FrmTestsAppointment frmTestAppointment = _SetTestAppointmentFormAccordingToTestButton(app, Tsm);
+            frmTestAppointment.FormClosed += Nfrm_FormClosed;
+            frmTestAppointment.ShowDialog(); 
+
+        }
+
+
+        private void DisableAllTsms()
+        {
+            foreach(ToolStripItem tsm in contextMenuStrip1.Items)
+            {
+               if (tsm is ToolStripMenuItem item) tsm.Enabled = false; 
+            }
+        }
+        private void _EnableItemsForNewApp()
+        {
+            tsmShowDetails.Enabled = true; 
+            tsmEdit.Enabled = true;
+            tsmDelete.Enabled = true;
+            tsmCancel.Enabled = true;
+            tsmTestSch.Enabled = true;
+
+        }
+
+
+        private void _EnableForIssueLicense()
+        {
+            tsmShowDetails.Enabled = true;
+            tsmEdit.Enabled = true;
+            tsmDelete.Enabled = true;
+            tsmCancel.Enabled = true;
+            tsmIssueNewLicense.Enabled = true; 
+        }
+
+        private void _EnableForCancelApp()
+        {
+            tsmShowDetails.Enabled = true; 
+            tsmDelete.Enabled = true; 
+        }
+        //this function will decide which context menu items will be shown based on the selectedApp
+        private void _HandleShowedItems(clsLocalDrivingLicenseApp app)
+        {
+            int TotalTestPassed = clsTests.GetTotalPassedTests(app.LDLA_ID);
+            DisableAllTsms(); 
+            if (app._ApplicationStatus  == clsApplication.STATUS_CANCELED) // if the application is Canceled
+            {
+                _EnableForCancelApp();
+            }
+            else if (TotalTestPassed != 3 && app._ApplicationStatus == clsApplication.STATUS_NEW) //this mean that the applicant has not completed all tests
+            {
+                _EnableItemsForNewApp();
+            }
+            else if (TotalTestPassed == 3 && app._ApplicationStatus == clsApplication.STATUS_NEW) // this mean that the applicant has finished all tests and ready for taking a driving license
+            {
+                _EnableForIssueLicense(); 
+            }
+            
+
+        }
+
+
+        
+        private void issueDrivingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            clsLocalDrivingLicenseApp app = _ReturnClickedRowLDLA();
+            _HandleShowedItems(app); 
         }
     }
 }

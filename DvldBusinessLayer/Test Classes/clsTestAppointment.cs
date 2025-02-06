@@ -57,9 +57,9 @@ namespace DvldBusinessLayer.Test_Classes
             return clsTestAppointmentsDataAccess.GetTestAppointmentsList(LDLAID, tTypeID); 
         }
 
-       static public bool TestAppExists(int LDLAID, int TypeID)
+       static public bool TestAppIsActive(int LDLAID, int TypeID)
         {
-            return clsTestAppointmentsDataAccess.TestAppExists(LDLAID, TypeID); 
+            return clsTestAppointmentsDataAccess.TestAppIsActive(LDLAID, TypeID); 
         }
 
 
@@ -92,6 +92,10 @@ namespace DvldBusinessLayer.Test_Classes
             return clsTestAppointmentsDataAccess.UpdateAnAppointment(this.TestAppointmentID, this.AppointmentDate, this.isLocked); 
         }
 
+        static public bool DeleteAllAppointmentsOfLDLA(int LDLAID)
+        {
+           return clsTestAppointmentsDataAccess.DeleteAllAppointmentsOfLDLA(LDLAID); 
+        }
 
       public bool Save()
         {

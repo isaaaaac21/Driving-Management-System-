@@ -1,4 +1,5 @@
-﻿using DVLDataAccessLayer.Tests_Data_Access;
+﻿using DVLDataAccessLayer.License_Data_Access_Classes;
+using DVLDataAccessLayer.Tests_Data_Access;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -46,6 +47,34 @@ namespace DvldBusinessLayer.Test_Classes
         static public bool TestPassed(int TestTypeID, int LDLAID)
         {
             return clsTestDataAccess.TestHasBeenPassed(TestTypeID, LDLAID); 
+        }
+
+        //this function will return the last test info of an LocalDrivingLicense Application of a giving type. 
+        static public clsTests GetTheLastTestOfApplication(int LDLAID, int TestType)
+        {
+            int testID = -1, TestAppointmentID = -1, userID = -1;
+            bool result = false;
+            string Note = "";
+            if (clsTestDataAccess.GetLastTest(LDLAID, TestType, ref testID, ref TestAppointmentID, ref result, ref Note, ref userID))
+            {
+                return new clsTests(testID, TestAppointmentID, result, Note, userID);
+            }
+            else return null; 
+        }
+
+        static public int GetTotalPassedTests(int LDLAID)
+        {
+            return clsTestDataAccess.GetTotalPassedTests(LDLAID);
+        }
+
+        static public int GetTotalFialedTrialsOfTest(int LDLAID, int TestTypeID)
+        {
+            return clsTestDataAccess.GetTotalTestFailTrialsOfType(LDLAID, TestTypeID); 
+        }
+
+        static public bool DeleteAllTestsByLDLAID(int LDLAID )
+        {
+            return clsTestDataAccess.DeleteAllTestsByLDLAID(LDLAID); 
         }
 
         public bool Save()

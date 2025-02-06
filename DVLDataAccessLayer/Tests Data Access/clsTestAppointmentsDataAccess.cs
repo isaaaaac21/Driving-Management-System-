@@ -126,7 +126,7 @@ namespace DVLDataAccessLayer
 
         }
 
-        static public bool TestAppExists(int LDLAID, int TestTypeID)
+        static public bool TestAppIsActive(int LDLAID, int TestTypeID)
         {
             bool isExist = false; 
             string Query = "select found = 1 from TestAppointments Where LocalDrivingLicenseApplicationID = @LDLAID and TestTypeID = @TTID and IsLocked = 0";
@@ -157,6 +157,35 @@ namespace DVLDataAccessLayer
             
         }
 
+        static public bool DeleteAllAppointmentsOfLDLA(int LDLAID)
+        {
+            bool isDeleted = false; 
+            int rowAffected = 0; 
+
+            string Query = "Delete from TestAppointments Where LocalDrivingLicenseApplicationID = @LDLAID ";
+
+            SqlCommand cmd = new SqlCommand(Query, Connection);
+            cmd.Parameters.AddWithValue("@LDLAID", LDLAID); 
+
+            try
+            {
+                Connection.Open();
+
+                rowAffected = cmd.ExecuteNonQuery();
+                if (rowAffected > 0) isDeleted = true; 
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                Connection.Close();
+            }
+
+            return isDeleted; 
+        }
 
         static public bool UpdateAnAppointment(int ID, DateTime AppDate, bool isLocked)
         {

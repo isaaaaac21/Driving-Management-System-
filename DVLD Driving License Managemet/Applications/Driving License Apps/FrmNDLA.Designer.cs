@@ -38,16 +38,21 @@
             this.lblResult = new System.Windows.Forms.Label();
             this.dgvList = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnShowDetails = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnEdit = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnCancel = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this._DebouncingTimer = new System.Windows.Forms.Timer(this.components);
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmShowDetails = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmCancel = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmTestSch = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisTest = new System.Windows.Forms.ToolStripMenuItem();
-            this._DebouncingTimer = new System.Windows.Forms.Timer(this.components);
+            this.tsmWritingTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmStreetTest = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmIssueNewLicense = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmShowLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose1 = new System.Windows.Forms.Button();
@@ -169,95 +174,153 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnShowDetails,
+            this.tsmShowDetails,
             this.toolStripSeparator1,
-            this.btnEdit,
-            this.btnDelete,
+            this.tsmEdit,
+            this.tsmDelete,
             this.toolStripSeparator2,
-            this.btnCancel,
+            this.tsmCancel,
             this.toolStripSeparator3,
-            this.tsmTestSch});
+            this.tsmTestSch,
+            this.toolStripSeparator4,
+            this.tsmIssueNewLicense,
+            this.tsmShowLicense});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(229, 234);
-            // 
-            // btnShowDetails
-            // 
-            this.btnShowDetails.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowDetails.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Details;
-            this.btnShowDetails.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnShowDetails.Name = "btnShowDetails";
-            this.btnShowDetails.Size = new System.Drawing.Size(228, 38);
-            this.btnShowDetails.Text = "Show Application Details";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(273, 316);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(225, 6);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Edit;
-            this.btnEdit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(228, 38);
-            this.btnEdit.Text = "Edit Application";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Delete;
-            this.btnDelete.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(228, 38);
-            this.btnDelete.Text = "Delete Application";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(269, 6);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(225, 6);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Cancel;
-            this.btnCancel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(228, 38);
-            this.btnCancel.Text = "Cancel Application";
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(269, 6);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(225, 6);
-            // 
-            // tsmTestSch
-            // 
-            this.tsmTestSch.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmVisTest});
-            this.tsmTestSch.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsmTestSch.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Test;
-            this.tsmTestSch.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsmTestSch.Name = "tsmTestSch";
-            this.tsmTestSch.Size = new System.Drawing.Size(228, 38);
-            this.tsmTestSch.Text = "Schedule Test";
-            this.tsmTestSch.MouseEnter += new System.EventHandler(this.tsmTestSch_MouseEnter);
-            // 
-            // tsmVisTest
-            // 
-            this.tsmVisTest.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.eye;
-            this.tsmVisTest.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsmVisTest.Name = "tsmVisTest";
-            this.tsmVisTest.Size = new System.Drawing.Size(197, 30);
-            this.tsmVisTest.Text = "Schedule Vision Test";
-            this.tsmVisTest.Click += new System.EventHandler(this.tsmVisTest_Click);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(269, 6);
             // 
             // _DebouncingTimer
             // 
             this._DebouncingTimer.Interval = 500;
             this._DebouncingTimer.Tick += new System.EventHandler(this._DebouncingTimer_Tick);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(269, 6);
+            // 
+            // tsmShowDetails
+            // 
+            this.tsmShowDetails.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmShowDetails.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Details;
+            this.tsmShowDetails.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmShowDetails.Name = "tsmShowDetails";
+            this.tsmShowDetails.Size = new System.Drawing.Size(272, 38);
+            this.tsmShowDetails.Text = "Show Application Details";
+            // 
+            // tsmEdit
+            // 
+            this.tsmEdit.Enabled = false;
+            this.tsmEdit.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmEdit.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Edit;
+            this.tsmEdit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmEdit.Name = "tsmEdit";
+            this.tsmEdit.Size = new System.Drawing.Size(272, 38);
+            this.tsmEdit.Text = "Edit Application";
+            // 
+            // tsmDelete
+            // 
+            this.tsmDelete.Enabled = false;
+            this.tsmDelete.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmDelete.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Delete;
+            this.tsmDelete.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmDelete.Name = "tsmDelete";
+            this.tsmDelete.Size = new System.Drawing.Size(272, 38);
+            this.tsmDelete.Text = "Delete Application";
+            this.tsmDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // tsmCancel
+            // 
+            this.tsmCancel.Enabled = false;
+            this.tsmCancel.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmCancel.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Cancel;
+            this.tsmCancel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmCancel.Name = "tsmCancel";
+            this.tsmCancel.Size = new System.Drawing.Size(272, 38);
+            this.tsmCancel.Text = "Cancel Application";
+            this.tsmCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // tsmTestSch
+            // 
+            this.tsmTestSch.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmVisTest,
+            this.tsmWritingTest,
+            this.tsmStreetTest});
+            this.tsmTestSch.Enabled = false;
+            this.tsmTestSch.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmTestSch.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Test;
+            this.tsmTestSch.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmTestSch.Name = "tsmTestSch";
+            this.tsmTestSch.Size = new System.Drawing.Size(272, 38);
+            this.tsmTestSch.Text = "Schedule Test";
+            this.tsmTestSch.MouseEnter += new System.EventHandler(this.tsmTestSch_MouseEnter);
+            // 
+            // tsmVisTest
+            // 
+            this.tsmVisTest.Enabled = false;
+            this.tsmVisTest.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.eye;
+            this.tsmVisTest.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmVisTest.Name = "tsmVisTest";
+            this.tsmVisTest.Size = new System.Drawing.Size(203, 30);
+            this.tsmVisTest.Text = "Schedule Vision Test";
+            this.tsmVisTest.Click += new System.EventHandler(this.HandleTestsButtons);
+            // 
+            // tsmWritingTest
+            // 
+            this.tsmWritingTest.Enabled = false;
+            this.tsmWritingTest.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Pen;
+            this.tsmWritingTest.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmWritingTest.Name = "tsmWritingTest";
+            this.tsmWritingTest.Size = new System.Drawing.Size(203, 30);
+            this.tsmWritingTest.Text = "Schedule Writing Test";
+            this.tsmWritingTest.Click += new System.EventHandler(this.HandleTestsButtons);
+            // 
+            // tsmStreetTest
+            // 
+            this.tsmStreetTest.Enabled = false;
+            this.tsmStreetTest.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Road2;
+            this.tsmStreetTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tsmStreetTest.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmStreetTest.Name = "tsmStreetTest";
+            this.tsmStreetTest.Size = new System.Drawing.Size(203, 30);
+            this.tsmStreetTest.Text = "Schedule Street Test";
+            this.tsmStreetTest.Click += new System.EventHandler(this.HandleTestsButtons);
+            // 
+            // tsmIssueNewLicense
+            // 
+            this.tsmIssueNewLicense.Enabled = false;
+            this.tsmIssueNewLicense.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmIssueNewLicense.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.DriverLicenseSmall;
+            this.tsmIssueNewLicense.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmIssueNewLicense.Name = "tsmIssueNewLicense";
+            this.tsmIssueNewLicense.Size = new System.Drawing.Size(272, 38);
+            this.tsmIssueNewLicense.Text = "Issue Driving License (First Time)";
+            this.tsmIssueNewLicense.Click += new System.EventHandler(this.issueDrivingToolStripMenuItem_Click);
+            // 
+            // tsmShowLicense
+            // 
+            this.tsmShowLicense.Enabled = false;
+            this.tsmShowLicense.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmShowLicense.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.DriverImg;
+            this.tsmShowLicense.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmShowLicense.Name = "tsmShowLicense";
+            this.tsmShowLicense.Size = new System.Drawing.Size(272, 38);
+            this.tsmShowLicense.Text = "Show License";
             // 
             // btnClose
             // 
@@ -354,14 +417,19 @@
         private System.Windows.Forms.DataGridView dgvList;
         private System.Windows.Forms.Timer _DebouncingTimer;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem btnShowDetails;
+        private System.Windows.Forms.ToolStripMenuItem tsmShowDetails;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem btnEdit;
-        private System.Windows.Forms.ToolStripMenuItem btnDelete;
+        private System.Windows.Forms.ToolStripMenuItem tsmEdit;
+        private System.Windows.Forms.ToolStripMenuItem tsmDelete;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem btnCancel;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem tsmTestSch;
         private System.Windows.Forms.ToolStripMenuItem tsmVisTest;
+        private System.Windows.Forms.ToolStripMenuItem tsmWritingTest;
+        private System.Windows.Forms.ToolStripMenuItem tsmStreetTest;
+        private System.Windows.Forms.ToolStripMenuItem tsmCancel;
+        private System.Windows.Forms.ToolStripMenuItem tsmIssueNewLicense;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem tsmShowLicense;
     }
 }
