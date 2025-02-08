@@ -41,8 +41,8 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this._DebouncingTimer = new System.Windows.Forms.Timer(this.components);
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this._DebouncingTimer = new System.Windows.Forms.Timer(this.components);
             this.tsmShowDetails = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmDelete = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +53,7 @@
             this.tsmStreetTest = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmIssueNewLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmShowLicense = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmShowLcHis = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose1 = new System.Windows.Forms.Button();
@@ -184,9 +185,10 @@
             this.tsmTestSch,
             this.toolStripSeparator4,
             this.tsmIssueNewLicense,
-            this.tsmShowLicense});
+            this.tsmShowLicense,
+            this.tsmShowLcHis});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(273, 316);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(273, 354);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // toolStripSeparator1
@@ -204,15 +206,15 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(269, 6);
             // 
-            // _DebouncingTimer
-            // 
-            this._DebouncingTimer.Interval = 500;
-            this._DebouncingTimer.Tick += new System.EventHandler(this._DebouncingTimer_Tick);
-            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(269, 6);
+            // 
+            // _DebouncingTimer
+            // 
+            this._DebouncingTimer.Interval = 500;
+            this._DebouncingTimer.Tick += new System.EventHandler(this._DebouncingTimer_Tick);
             // 
             // tsmShowDetails
             // 
@@ -310,7 +312,7 @@
             this.tsmIssueNewLicense.Name = "tsmIssueNewLicense";
             this.tsmIssueNewLicense.Size = new System.Drawing.Size(272, 38);
             this.tsmIssueNewLicense.Text = "Issue Driving License (First Time)";
-            this.tsmIssueNewLicense.Click += new System.EventHandler(this.issueDrivingToolStripMenuItem_Click);
+            this.tsmIssueNewLicense.Click += new System.EventHandler(this.tsmIssueNewLicense_Click);
             // 
             // tsmShowLicense
             // 
@@ -321,6 +323,17 @@
             this.tsmShowLicense.Name = "tsmShowLicense";
             this.tsmShowLicense.Size = new System.Drawing.Size(272, 38);
             this.tsmShowLicense.Text = "Show License";
+            this.tsmShowLicense.Click += new System.EventHandler(this.tsmShowLicense_Click);
+            // 
+            // tsmShowLcHis
+            // 
+            this.tsmShowLcHis.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmShowLcHis.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.smlHistory;
+            this.tsmShowLcHis.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmShowLcHis.Name = "tsmShowLcHis";
+            this.tsmShowLcHis.Size = new System.Drawing.Size(272, 38);
+            this.tsmShowLcHis.Text = "Show Person License History";
+            this.tsmShowLcHis.Click += new System.EventHandler(this.tsmShowLcHis_Click);
             // 
             // btnClose
             // 
@@ -431,5 +444,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmIssueNewLicense;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem tsmShowLicense;
+        private System.Windows.Forms.ToolStripMenuItem tsmShowLcHis;
     }
 }

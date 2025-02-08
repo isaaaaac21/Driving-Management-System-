@@ -330,6 +330,15 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
             tsmShowDetails.Enabled = true; 
             tsmDelete.Enabled = true; 
         }
+
+        private void _EnableForShowLicenseInfo()
+        {
+            tsmShowDetails.Enabled = true;
+            tsmShowLicense.Enabled = true;
+            tsmShowLcHis.Enabled = true; 
+        }
+
+
         //this function will decide which context menu items will be shown based on the selectedApp
         private void _HandleShowedItems(clsLocalDrivingLicenseApp app)
         {
@@ -347,21 +356,44 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
             {
                 _EnableForIssueLicense(); 
             }
+            else if (app._ApplicationStatus == clsApplication.STATUS_COMPLETED)
+            {
+                _EnableForShowLicenseInfo(); 
+            }
             
 
         }
 
 
         
-        private void issueDrivingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
             clsLocalDrivingLicenseApp app = _ReturnClickedRowLDLA();
             _HandleShowedItems(app); 
+        }
+
+        private void tsmIssueNewLicense_Click(object sender, EventArgs e)
+        {
+            FrmIssueDL frmIssueDL = new FrmIssueDL(_ReturnClickedRowLDLA());
+            frmIssueDL.FormClosed += Nfrm_FormClosed;
+            frmIssueDL.ShowDialog(); 
+        }
+
+        private void tsmShowLicense_Click(object sender, EventArgs e)
+        {
+            FrmLicenseInfo frmLcInfo = new FrmLicenseInfo(_ReturnClickedRowLDLA());
+            frmLcInfo.ShowDialog(); 
+        }
+
+        private void tsmShowLcHis_Click(object sender, EventArgs e)
+        {
+            clsLocalDrivingLicenseApp app = _ReturnClickedRowLDLA();
+            clsPersons person = clsPersons.FindPerson(app._ApplicantPersonID);
+
+            FrmLicenseHitstory frmLcHis = new FrmLicenseHitstory(person);
+            frmLcHis.ShowDialog();
         }
     }
 }

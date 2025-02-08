@@ -15,17 +15,16 @@ namespace DvldBusinessLayer.Application_Classes
         //LDLA_ID stands for : Local driving license application ID
         public int LDLA_ID { get; set; }
         public int LicenseClassID { get; set; }
-
         public int PassedTests { get; set; }
 
 
-        public clsLocalDrivingLicenseApp () : base() 
+        public clsLocalDrivingLicenseApp() : base()
         {
             LDLA_ID = -1;
             LicenseClassID = -1;
         }
         clsLocalDrivingLicenseApp(int appID, int perID, DateTime AppDate, int typeID, int status, DateTime LastStatus, decimal Fees, int userID,
-            int LDLAID, int licClsID ) : base(appID, perID, AppDate, typeID, status, LastStatus, Fees, userID )
+            int LDLAID, int licClsID) : base(appID, perID, AppDate, typeID, status, LastStatus, Fees, userID)
         {
             LDLA_ID = LDLAID;
             LicenseClassID = licClsID;
@@ -41,35 +40,36 @@ namespace DvldBusinessLayer.Application_Classes
 
         static public bool LDLAExists(clsLocalDrivingLicenseApp LDVLA)
         {
-            return clsLDLADataAccess.LDLAExists(LDVLA._ApplicantPersonID, LDVLA.LicenseClassID); 
+            return clsLDLADataAccess.LDLAExists(LDVLA._ApplicantPersonID, LDVLA.LicenseClassID);
         }
 
         private bool _Add()
         {
             this._ApplicationID = clsApplicationDataAccess._AddApp(this._ApplicantPersonID, this._ApplicationDate, this._ApplicationTypeID,
-                this._ApplicationStatus, this._LastStatusDate, this._PaidFees, this._UserCreatedID); 
-            
+                this._ApplicationStatus, this._LastStatusDate, this._PaidFees, this._UserCreatedID);
+
             if (this._ApplicationID != -1)
             {
                 this.LDLA_ID = clsLDLADataAccess.AddLDLApp(this._ApplicationID, this.LicenseClassID);
-                return (this.LDLA_ID != -1); 
+                return (this.LDLA_ID != -1);
             }
             else
             {
-                return false; 
+                return false;
             }
         }
+
 
 
 
         static public bool CancelAnLDLAByID(int ID)
         {
-            return clsLDLADataAccess.CancelAnLDLAByID(ID); 
+            return clsLDLADataAccess.CancelAnLDLAByID(ID);
         }
 
-        static public  clsLocalDrivingLicenseApp FindLDLA(int ID)
+        static public clsLocalDrivingLicenseApp FindLDLA(int ID)
         {
-            int appID = -1, PerID = -1, typeID = -1, appStatus = -1, userID = -1, LCID =  -1 ;
+            int appID = -1, PerID = -1, typeID = -1, appStatus = -1, userID = -1, LCID = -1;
             DateTime dt = DateTime.Now, lastStatus = DateTime.Now;
             decimal fees = 0;
 
@@ -77,20 +77,20 @@ namespace DvldBusinessLayer.Application_Classes
             {
                 return new clsLocalDrivingLicenseApp(appID, PerID, dt, typeID, appStatus, lastStatus, fees, userID, ID, LCID);
             }
-            else return null; 
+            else return null;
 
         }
 
-        static public bool DeleteLDLA(clsLocalDrivingLicenseApp LDLA) 
+        static public bool DeleteLDLA(clsLocalDrivingLicenseApp LDLA)
         {
-            if (clsTests.DeleteAllTestsByLDLAID(LDLA.LDLA_ID) && clsTestAppointment.DeleteAllAppointmentsOfLDLA(LDLA.LDLA_ID) )
+            if (clsTests.DeleteAllTestsByLDLAID(LDLA.LDLA_ID) && clsTestAppointment.DeleteAllAppointmentsOfLDLA(LDLA.LDLA_ID))
             {
-                if (clsLDLADataAccess.DeleteLDLA(LDLA.LDLA_ID) && clsApplicationDataAccess.DeleteApp(LDLA._ApplicationID) ) return true;
+                if (clsLDLADataAccess.DeleteLDLA(LDLA.LDLA_ID) && clsApplicationDataAccess.DeleteApp(LDLA._ApplicationID)) return true;
 
             }
             //I need to delete from the tests table also
 
-            return false; 
+            return false;
         }
 
 
@@ -99,7 +99,21 @@ namespace DvldBusinessLayer.Application_Classes
 
         public bool Save()
         {
-            return _Add(); 
+            switch (Mode)
+            {
+                case enMode.Add:
+                    if (_Add())
+                    {
+                        Mode = enMode.Update;
+                        return true;
+                    }
+                    break;
+                case enMode.Update:
+                    //I used the method of the application class since I need just to update the status and last status, so there is no need to overrite it 
+                    return _Update();
+
+            }
+            return false;
         }
     }
 }

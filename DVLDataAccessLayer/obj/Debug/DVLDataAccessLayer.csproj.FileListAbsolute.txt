@@ -22,3 +22,9 @@ D:\F things\Programming\GITHUB Reps\DVLDataAccessLayer\obj\Debug\DVLDataAccessLa
 D:\F things\Programming\GITHUB Reps\DVLDataAccessLayer\obj\Debug\DVLDataAccessLayer.csproj.CoreCompileInputs.cache
 D:\F things\Programming\GITHUB Reps\DVLDataAccessLayer\obj\Debug\DVLDataAccessLayer.dll
 D:\F things\Programming\GITHUB Reps\DVLDataAccessLayer\obj\Debug\DVLDataAccessLayer.pdb
+D:\F things\Programming\MyProject\DVLDataAccessLayer\bin\Debug\DVLDataAccessLayer.dll
+D:\F things\Programming\MyProject\DVLDataAccessLayer\bin\Debug\DVLDataAccessLayer.pdb
+D:\F things\Programming\MyProject\DVLDataAccessLayer\obj\Debug\DVLDataAccessLayer.csproj.AssemblyReference.cache
+D:\F things\Programming\MyProject\DVLDataAccessLayer\obj\Debug\DVLDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\F things\Programming\MyProject\DVLDataAccessLayer\obj\Debug\DVLDataAccessLayer.dll
+D:\F things\Programming\MyProject\DVLDataAccessLayer\obj\Debug\DVLDataAccessLayer.pdb

@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Application Data Access Classes\clsApplicationDataAccess.cs" />
     <Compile Include="Application Data Access Classes\clsApplicationsTypesDataAccess.cs" />
+    <Compile Include="License Data Access Classes\DriversDataAccess Classes\clsDriversDataAccess.cs" />
+    <Compile Include="License Data Access Classes\clsLicenseDataAccess.cs" />
     <Compile Include="Tests Data Access\clsTestDataAccess.cs" />
     <Compile Include="Tests Data Access\clsTestTypesDataAccess.cs" />
     <Compile Include="Tests Data Access\clsTestAppointmentsDataAccess.cs" />

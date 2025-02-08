@@ -21,8 +21,8 @@ namespace DvldBusinessLayer.Application_Classes
 
         public int _UserCreatedID { get; set; }
 
-        enum enMode { Add = 0, Edit }
-        enMode Mode = enMode.Add;
+        protected enum enMode { Add = 0, Update }
+        protected enMode Mode = enMode.Add;
 
         static public int STATUS_NEW = 1, STATUS_COMPLETED = 2, STATUS_CANCELED = 3; 
 
@@ -52,7 +52,7 @@ namespace DvldBusinessLayer.Application_Classes
             _LastStatusDate = LastStatus;
             _PaidFees = Fees;
             _UserCreatedID = userID;
-            Mode = enMode.Edit; 
+            Mode = enMode.Update; 
         }
 
         static public bool CheckIfPersonHasSameApp(clsApplication App)
@@ -79,12 +79,18 @@ namespace DvldBusinessLayer.Application_Classes
             else return null; 
         }
 
-        public bool _Add()
+        protected bool _Add()
         {
             this._ApplicationID = clsApplicationDataAccess._AddApp(this._ApplicantPersonID, this._ApplicationDate, this._ApplicationTypeID, this._ApplicationStatus,
                 this._LastStatusDate, this._PaidFees, this._UserCreatedID);
 
             return (this._ApplicationID != -1); 
+        }
+
+        protected bool _Update()
+        {
+            return clsApplicationDataAccess.UpdateApp(this._ApplicationID, this._ApplicantPersonID, this._ApplicationDate, this._ApplicationTypeID, this._ApplicationStatus,
+                this._LastStatusDate, this._PaidFees, this._UserCreatedID); 
         }
 
         static public bool DeleteAppByID(int appID)
@@ -99,11 +105,13 @@ namespace DvldBusinessLayer.Application_Classes
                 case enMode.Add:
                     if (_Add())
                     {
-                        Mode = enMode.Edit;
+                        Mode = enMode.Update;
                         return true;
                     }
                     break;
-                
+                case enMode.Update:
+                    return _Update(); 
+
 
             }
             return false;

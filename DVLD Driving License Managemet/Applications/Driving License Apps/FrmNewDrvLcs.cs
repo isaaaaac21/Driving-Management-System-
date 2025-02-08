@@ -78,14 +78,25 @@ namespace DVLD_Driving_License_Managemet.Applications
             }
             return true; 
         }
+
+        //this function check if the applicant already has a license of the giving class type
+        private bool _LicenseExists()
+        {
+            if (clsLicense.LicenseExists(_CurrentApplication._ApplicantPersonID, _CurrentApplication.LicenseClassID))
+            {
+                clsDesign._ShowErrorMessage("This Applicant Already has a license of this Class Type !!!");
+                return true; 
+            }
+            return false;
+        }
         private bool _LDVLAExists()
         {
             if( clsLocalDrivingLicenseApp.LDLAExists(_CurrentApplication))
             {
                 clsDesign._ShowErrorMessage("Choose another license class, the selected person already has an active application for the selected class");
-                return false; 
+                return true; 
             }
-            return true; 
+            return false ; 
         }
         private void CtrlFilter1_NoPersonInfo(object sender, EventArgs e)
         {
@@ -123,7 +134,7 @@ namespace DVLD_Driving_License_Managemet.Applications
         private void btnSave_Click(object sender, EventArgs e)
         {
             _LoadInputsToAnApp();
-            if(! _LDVLAExists() || !_PersonIsOlderThanClassMinAge()) return;
+            if(_LicenseExists() || _LDVLAExists() || !_PersonIsOlderThanClassMinAge()) return;
             if (_CurrentApplication.Save())
             {
                 clsDesign._ShowSuccessMessage("New Driving License Application Has Been Added succeffully :-) ");

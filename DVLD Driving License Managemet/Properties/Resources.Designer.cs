@@ -273,6 +273,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DriverLicenseHistory {
+            get {
+                object obj = ResourceManager.GetObject("DriverLicenseHistory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DriverLicenseSmall {
             get {
                 object obj = ResourceManager.GetObject("DriverLicenseSmall", resourceCulture);
@@ -286,6 +296,26 @@ namespace DVLD_Driving_License_Managemet.Properties {
         internal static System.Drawing.Bitmap DriverLs {
             get {
                 object obj = ResourceManager.GetObject("DriverLs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Drivers10 {
+            get {
+                object obj = ResourceManager.GetObject("Drivers10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DrivingLicense2 {
+            get {
+                object obj = ResourceManager.GetObject("DrivingLicense2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -603,6 +633,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Question2 {
+            get {
+                object obj = ResourceManager.GetObject("Question2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RedClose {
             get {
                 object obj = ResourceManager.GetObject("RedClose", resourceCulture);
@@ -686,6 +726,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         internal static System.Drawing.Bitmap Settings {
             get {
                 object obj = ResourceManager.GetObject("Settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smlHistory {
+            get {
+                object obj = ResourceManager.GetObject("smlHistory", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
