@@ -85,5 +85,11 @@ namespace DVLD_Driving_License_Managemet
             FrmNewDrvLcs ndla = new FrmNewDrvLcs();
             ndla.ShowDialog(); 
         }
+
+        private void tsbDrivers_Click(object sender, EventArgs e)
+        {
+            FrmDrivers frmDrvs = new FrmDrivers();
+            frmDrvs.ShowDialog(); 
+        }
     }
 }

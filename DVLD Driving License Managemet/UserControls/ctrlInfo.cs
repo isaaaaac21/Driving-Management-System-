@@ -17,7 +17,29 @@ namespace DVLD_Driving_License_Managemet
         public ctrlInfo()
         {
             InitializeComponent();
-            
+            this.gbPersonalInfo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+
+            // Anchor individual controls within the panel
+            // Example for lblName:
+            this.lblName.Anchor = AnchorStyles.Top | AnchorStyles.Left; // Keep at the top-left
+            this.label6.Anchor = AnchorStyles.Top | AnchorStyles.Left; // Keep at the top-left
+            this.pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left; // Keep at the top-left
+
+
+            // Example for lblAds (stretch horizontally and keep at bottom-left):
+            this.lblAds.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            this.label14.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            this.pictureBox9.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+
+            // Example for pbPerson (keep at top-right):
+            this.pbPerson.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            this.btnEdit.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+
+            // ... set Anchor styles for ALL other controls similarly ...
+
+            // Important: Set the resize style for the UserControl or the form containing it
+            this.AutoSize = false; // Or true, depending on your needs
+
         }
         public clsPersons _person { get; set; }
 

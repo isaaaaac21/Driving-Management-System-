@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace DVLD_Driving_License_Managemet.UserControls
 {
-    public partial class ctrlDrivingeLicenseInfo : UserControl
+    public partial class ctrlLDLAInfo : UserControl
     {
-        public ctrlDrivingeLicenseInfo()
+        public ctrlLDLAInfo()
         {
             InitializeComponent();
 

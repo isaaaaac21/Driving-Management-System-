@@ -37,7 +37,7 @@
             this.lblResult = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblRe = new System.Windows.Forms.Label();
-            this.ctrlDrivingeLicenseInfo1 = new DVLD_Driving_License_Managemet.UserControls.ctrlDrivingeLicenseInfo();
+            this.ctrlDrivingeLicenseInfo1 = new DVLD_Driving_License_Managemet.UserControls.ctrlLDLAInfo();
             this.pbTypePic = new System.Windows.Forms.PictureBox();
             this.btnClose1 = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -247,7 +247,7 @@
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblRe;
-        private UserControls.ctrlDrivingeLicenseInfo ctrlDrivingeLicenseInfo1;
+        private UserControls.ctrlLDLAInfo ctrlDrivingeLicenseInfo1;
         private System.Windows.Forms.PictureBox pbTypePic;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tsmEdit;

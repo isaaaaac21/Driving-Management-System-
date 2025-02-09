@@ -31,7 +31,7 @@
             this.txtNotes = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ctrlDrivingeLicenseInfo1 = new DVLD_Driving_License_Managemet.UserControls.ctrlDrivingeLicenseInfo();
+            this.ctrlDrivingeLicenseInfo1 = new DVLD_Driving_License_Managemet.UserControls.ctrlLDLAInfo();
             this.btnClose1 = new System.Windows.Forms.Button();
             this.btnIssue = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -122,7 +122,7 @@
 
         #endregion
 
-        private UserControls.ctrlDrivingeLicenseInfo ctrlDrivingeLicenseInfo1;
+        private UserControls.ctrlLDLAInfo ctrlDrivingeLicenseInfo1;
         private System.Windows.Forms.Button btnClose1;
         private System.Windows.Forms.Button btnIssue;
         private System.Windows.Forms.TextBox txtNotes;

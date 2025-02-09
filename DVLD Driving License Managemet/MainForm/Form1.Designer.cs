@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnApp = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.tsmDLServices = new System.Windows.Forms.ToolStripMenuItem();
             this.btnNewDrivingLicense = new System.Windows.Forms.ToolStripMenuItem();
@@ -90,7 +89,6 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton2,
             this.tsbManagePeople,
-            this.toolStripButton2,
             this.tsbDrivers,
             this.tspUsers,
             this.toolStripDropDownButton1});
@@ -99,14 +97,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(831, 76);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 73);
-            this.toolStripButton2.Text = "Drivers";
             // 
             // toolStripDropDownButton2
             // 
@@ -258,6 +248,7 @@
             this.tsbDrivers.Name = "tsbDrivers";
             this.tsbDrivers.Size = new System.Drawing.Size(132, 73);
             this.tsbDrivers.Text = "    Drivers             ";
+            this.tsbDrivers.Click += new System.EventHandler(this.tsbDrivers_Click);
             // 
             // tspUsers
             // 
@@ -361,7 +352,6 @@
         private System.Windows.Forms.ToolStripButton btnApp;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbManagePeople;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton tspUsers;
         private System.Windows.Forms.ToolStripButton tsbDrivers;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;

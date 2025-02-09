@@ -162,10 +162,22 @@ namespace DVLDataAccessLayer.License_Data_Access_Classes
         {
             DataTable Dt = new DataTable();
 
-            string Query = "select DriverID, P.PersonID, P.FirstName + ' ' + P.SecondName + ' ' + P.LastName as FullName, CreatedDate as Date, " +
-                "(select count(*) as ActiveLicenses From Licenses Where DriverID = 11 and IsActive = 1) as ActiveLicenses  " +
-                "from drivers d " +
-                "Inner Join People as P on d.PersonID = P.PersonID ; "; 
+            string Query = "Select " +
+                "d.DriverID, " +
+                "P.PersonID, " +
+                "P.FirstName + ' ' + P.SecondName + ' ' + P.LastName AS FullName," +
+                "d.CreatedDate as Date, " +
+                "count(CASE WHEN L.IsActive = 1 THEN 1 END) as AcitveLicenses " +
+                "from Drivers d " +
+                "Inner join People  P on d.PersonID = P.PersonID " +
+                "left join Licenses L on d.DriverID = L.DriverID " +
+                "Group by " +
+                "d.DriverID, " +
+                "P.PersonID, " +
+                "P.FirstName, " +
+                "P.SecondName, " +
+                "P.LastName, " +
+                "d.CreatedDate ; "; 
 
 
             SqlCommand cmd = new SqlCommand(Query, Connection);

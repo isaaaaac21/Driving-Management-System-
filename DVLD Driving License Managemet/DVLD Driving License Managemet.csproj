@@ -161,11 +161,11 @@
     <Compile Include="UserControls\CtrlDriverLicenses.Designer.cs">
       <DependentUpon>CtrlDriverLicenses.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ctrlDrivingeLicenseInfo.cs">
+    <Compile Include="UserControls\ctrlLDLAInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ctrlDrivingeLicenseInfo.Designer.cs">
-      <DependentUpon>ctrlDrivingeLicenseInfo.cs</DependentUpon>
+    <Compile Include="UserControls\ctrlLDLAInfo.Designer.cs">
+      <DependentUpon>ctrlLDLAInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ctrlFilter.cs">
       <SubType>UserControl</SubType>
@@ -271,8 +271,8 @@
     <EmbeddedResource Include="UserControls\CtrlDriverLicenses.resx">
       <DependentUpon>CtrlDriverLicenses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ctrlDrivingeLicenseInfo.resx">
-      <DependentUpon>ctrlDrivingeLicenseInfo.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ctrlLDLAInfo.resx">
+      <DependentUpon>ctrlLDLAInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ctrlFilter.resx">
       <DependentUpon>ctrlFilter.cs</DependentUpon>

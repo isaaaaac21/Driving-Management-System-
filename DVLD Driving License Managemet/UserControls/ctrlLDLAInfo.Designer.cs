@@ -1,6 +1,6 @@
 ﻿namespace DVLD_Driving_License_Managemet.UserControls
 {
-    partial class ctrlDrivingeLicenseInfo
+    partial class ctrlLDLAInfo
     {
         /// <summary> 
         /// Required designer variable.

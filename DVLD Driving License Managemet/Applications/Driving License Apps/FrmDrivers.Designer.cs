@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
             this.btnClose1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this._DebouncingTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +52,9 @@
             this.txtFilter.Name = "txtFilter";
             this.txtFilter.Size = new System.Drawing.Size(123, 21);
             this.txtFilter.TabIndex = 44;
+            this.txtFilter.Visible = false;
+            this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
+            this.txtFilter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilter_KeyPress);
             // 
             // label4
             // 
@@ -87,6 +92,7 @@
             this.cbFilter.Name = "cbFilter";
             this.cbFilter.Size = new System.Drawing.Size(152, 21);
             this.cbFilter.TabIndex = 40;
+            this.cbFilter.SelectedIndexChanged += new System.EventHandler(this.cbFilter_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -148,6 +154,7 @@
             this.btnClose1.Text = "Close";
             this.btnClose1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClose1.UseVisualStyleBackColor = true;
+            this.btnClose1.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox1
             // 
@@ -173,6 +180,11 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // _DebouncingTimer
+            // 
+            this._DebouncingTimer.Interval = 500;
+            this._DebouncingTimer.Tick += new System.EventHandler(this._DebouncingTimer_Tick);
+            // 
             // FrmDrivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,6 +204,7 @@
             this.Controls.Add(this.btnClose);
             this.Name = "FrmDrivers";
             this.Text = "FrmDrivers";
+            this.Load += new System.EventHandler(this.FrmDrivers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -212,5 +225,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Timer _DebouncingTimer;
     }
 }

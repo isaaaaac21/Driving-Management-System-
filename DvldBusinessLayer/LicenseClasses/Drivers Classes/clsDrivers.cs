@@ -52,7 +52,7 @@ namespace DvldBusinessLayer.LicenseClasses.Drivers_Classes
         }
         static public DataTable GetDriversList()
         {
-            return clsDriversDataAccess.Get
+            return clsDriversDataAccess.GetDriversList(); 
         }
         static public clsDrivers GetDriverByPersonID(int PerID)
         {
