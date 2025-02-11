@@ -139,3 +139,8 @@ D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD 
 D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD Driving License Managemet.pdb
 D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.Applications.Driving_License_Apps.FrmDrivers.resources
 D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.UserControls.ctrlLDLAInfo.resources
+D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.UserControls.ctrlFindLicenseInfo.resources
+D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.Applications.InternationalDriving_License.FrmInterLcInfo.resources
+D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.UserControls.ctrlInterDLInfo.resources
+D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.Applications.InternationalDriving_License.FrmInterLicenseApp.resources
+D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.Applications.InternationalDriving_License.FrmInterLicenses.resources

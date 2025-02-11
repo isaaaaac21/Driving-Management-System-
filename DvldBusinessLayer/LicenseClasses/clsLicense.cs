@@ -76,7 +76,7 @@ namespace DvldBusinessLayer
         }
 
 
-        public clsLicense GetLicenseByID(int LicenseID)
+       static public clsLicense GetLicenseByID(int LicenseID)
         {
             int AppID = -1, DrID = -1, LClassID = -1, UserID = -1;
             DateTime issDate = DateTime.Now, expDate = DateTime.Now;

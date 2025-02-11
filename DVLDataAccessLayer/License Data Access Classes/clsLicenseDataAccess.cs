@@ -38,7 +38,7 @@ namespace DVLDataAccessLayer.License_Data_Access_Classes
                     userID = Convert.ToInt32(reader["CreatedByUserID"]);
                     issDate = Convert.ToDateTime(reader["IssueDate"]);
                     expDate = Convert.ToDateTime(reader["ExpirationDate"]);
-                    notes = (string)reader["Notes"];
+                    notes = reader["Notes"] == DBNull.Value ? "" : (string)reader["Notes"];
                     fees = Convert.ToDecimal(reader["PaidFees"]);
                     isAct = Convert.ToBoolean(reader["IsActive"]);
                     issReason = Convert.ToByte(reader["IssueReason"]);

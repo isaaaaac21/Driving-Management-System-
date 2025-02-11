@@ -1,4 +1,5 @@
 ﻿using DvldBusinessLayer;
+using DvldBusinessLayer.LicenseClasses;
 using DvldBusinessLayer.LicenseClasses.Drivers_Classes;
 using System;
 using System.Collections.Generic;
@@ -22,11 +23,22 @@ namespace DVLD_Driving_License_Managemet.UserControls
 
         public clsDrivers _Driver { get; set; }
         
+        private void _InitializeInterTab()
+        {
+            dgvInterList.DataSource = clsInterDL.GetInterLicensesOfDriver(_Driver.DriverID);
+            lblResult2.Text = dgvInterList.Rows.Count.ToString(); 
+        }
+        private void _InitializeLocalTab()
+        {
+            dgvLocalList.DataSource = clsLicense.GetTotalLicensesOfDriver(_Driver.DriverID);
+            lblResult.Text = dgvLocalList.Rows.Count.ToString();
+        }
+
         public void _InitializeCtrlsWithData(clsPersons person)
         {
-            _Driver = clsDrivers.GetDriverByPersonID(person.PersonID); 
-            dgvLocalList.DataSource = clsLicense.GetTotalLicensesOfDriver(_Driver.DriverID);
-            lblResult.Text = dgvLocalList.Rows.Count.ToString(); 
+            _Driver = clsDrivers.GetDriverByPersonID(person.PersonID);
+            _InitializeLocalTab();
+            _InitializeInterTab();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

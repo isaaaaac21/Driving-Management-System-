@@ -105,7 +105,7 @@ namespace DVLDataAccessLayer.Application_Data_Access_Classes
         static public bool DeleteApp(int ID)
         {
             bool isDeleted = false;
-            int rowAffected = 0;
+            int rowAffected =-1;
 
             string Query = "Delete from Applications Where ApplicationID = @ID";
             SqlCommand cmd = new SqlCommand(Query, Connection);
@@ -119,7 +119,7 @@ namespace DVLDataAccessLayer.Application_Data_Access_Classes
 
                 rowAffected = cmd.ExecuteNonQuery();
 
-                if (rowAffected > 0) isDeleted = true;
+                if (rowAffected >= 0) isDeleted = true;
             }
             catch (Exception ex)
             {

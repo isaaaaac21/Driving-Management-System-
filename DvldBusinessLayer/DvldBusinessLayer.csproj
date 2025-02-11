@@ -44,6 +44,7 @@
     <Compile Include="Application Classes\clsApplication.cs" />
     <Compile Include="Application Classes\clsApplicationsTypes.cs" />
     <Compile Include="Application Classes\clsLocalDrivingLicenseApp.cs" />
+    <Compile Include="LicenseClasses\clsInterDL.cs" />
     <Compile Include="LicenseClasses\clsLicense.cs" />
     <Compile Include="LicenseClasses\clsLicenseClass.cs" />
     <Compile Include="LicenseClasses\Drivers Classes\clsDrivers.cs" />

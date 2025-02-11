@@ -30,10 +30,12 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.ctrlDriverLicenses1 = new DVLD_Driving_License_Managemet.UserControls.CtrlDriverLicenses();
             this.ctrlInfo1 = new DVLD_Driving_License_Managemet.ctrlInfo();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -77,6 +79,12 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
             this.ctrlInfo1.Size = new System.Drawing.Size(648, 291);
             this.ctrlInfo1.TabIndex = 1;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
             // FrmLicenseHitstory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,5 +108,6 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         private CtrlDriverLicenses ctrlDriverLicenses1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

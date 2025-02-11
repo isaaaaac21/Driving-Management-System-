@@ -149,7 +149,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(617, 214);
+            this.tabPage2.Size = new System.Drawing.Size(734, 214);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "International";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -194,7 +194,7 @@
             this.dgvInterList.Name = "dgvInterList";
             this.dgvInterList.ReadOnly = true;
             this.dgvInterList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInterList.Size = new System.Drawing.Size(646, 159);
+            this.dgvInterList.Size = new System.Drawing.Size(722, 159);
             this.dgvInterList.TabIndex = 34;
             // 
             // label2

@@ -24,6 +24,17 @@ namespace DvldBusinessLayer
   
         }
 
+        public enum enAppTypes
+        {
+            NewLocalDL = 1, 
+            RenewDL, 
+            ReplacForLost, 
+            ReplaceForDmg, 
+            ReleaseDetained, 
+            NewInterDL, 
+            RetakeTest
+        }
+
         public clsApplicationsTypes(int ID, string Title, decimal Fees)
         {
             _AppTypeID = ID;

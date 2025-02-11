@@ -263,6 +263,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DriverLc20 {
+            get {
+                object obj = ResourceManager.GetObject("DriverLc20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DriverLicense {
             get {
                 object obj = ResourceManager.GetObject("DriverLicense", resourceCulture);
@@ -433,6 +443,26 @@ namespace DVLD_Driving_License_Managemet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap InterDL {
+            get {
+                object obj = ResourceManager.GetObject("InterDL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap InterNationalDrivingLicense {
+            get {
+                object obj = ResourceManager.GetObject("InterNationalDrivingLicense", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap License {
             get {
                 object obj = ResourceManager.GetObject("License", resourceCulture);
@@ -476,6 +506,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         internal static System.Drawing.Bitmap List1 {
             get {
                 object obj = ResourceManager.GetObject("List1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LocalLc {
+            get {
+                object obj = ResourceManager.GetObject("LocalLc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

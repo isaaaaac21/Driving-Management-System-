@@ -1,4 +1,5 @@
-﻿using DvldBusinessLayer;
+﻿using DVLD_Driving_License_Managemet.Properties;
+using DvldBusinessLayer;
 using DvldBusinessLayer.Application_Classes;
 using System;
 using System.Collections.Generic;
@@ -36,7 +37,7 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
             lblNo.Text = person.NationalID.ToString();
             lblGen.Text = person.Gender == 0 ? "Male" : "Female";
             lblBirthDate.Text = person.DateOfBirth.ToShortDateString();
-            pbPerson.Image = Image.FromFile( person.ImagePath); 
+            pbPerson.Image = person.ImagePath == "" ? Resources.MaleUser:   Image.FromFile( person.ImagePath); 
 
         }
         private void _InitializeLicenseData()

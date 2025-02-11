@@ -238,7 +238,7 @@ namespace DVLDataAccessLayer.Tests_Data_Access
         static public bool DeleteAllTestsByLDLAID(int LDLAID)
         {
             bool isDeleted = false;
-            int rowAffected = 0;
+            int rowAffected = -1;
 
             string Query = "Delete T from tests T " +
                 "Inner join TestAppointments Ta on Ta.TestAppointmentID  = T.TestAppointmentID " +

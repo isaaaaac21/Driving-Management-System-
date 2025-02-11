@@ -40,6 +40,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmManageApps = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLDLA = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnInterDLA = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmDetain = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
@@ -157,6 +158,7 @@
             this.btnInterDL.Name = "btnInterDL";
             this.btnInterDL.Size = new System.Drawing.Size(296, 54);
             this.btnInterDL.Text = "International Driving License";
+            this.btnInterDL.Click += new System.EventHandler(this.btnInterDL_Click);
             // 
             // toolStripSeparator3
             // 
@@ -166,7 +168,8 @@
             // tsmManageApps
             // 
             this.tsmManageApps.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnLDLA});
+            this.btnLDLA,
+            this.btnInterDLA});
             this.tsmManageApps.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmManageApps.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.mngApps;
             this.tsmManageApps.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -177,11 +180,22 @@
             // btnLDLA
             // 
             this.btnLDLA.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLDLA.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.DriverLs;
+            this.btnLDLA.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.LocalLc;
+            this.btnLDLA.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnLDLA.Name = "btnLDLA";
-            this.btnLDLA.Size = new System.Drawing.Size(354, 28);
+            this.btnLDLA.Size = new System.Drawing.Size(422, 30);
             this.btnLDLA.Text = "Local Driving License applications";
             this.btnLDLA.Click += new System.EventHandler(this.localDrivingLicenseApplicationsToolStripMenuItem_Click);
+            // 
+            // btnInterDLA
+            // 
+            this.btnInterDLA.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInterDLA.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.InterDL;
+            this.btnInterDLA.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnInterDLA.Name = "btnInterDLA";
+            this.btnInterDLA.Size = new System.Drawing.Size(422, 30);
+            this.btnInterDLA.Text = "International Driving Licnese applications";
+            this.btnInterDLA.Click += new System.EventHandler(this.btnInterDLA_Click);
             // 
             // toolStripSeparator2
             // 
@@ -373,6 +387,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnNewDrivingLicense;
         private System.Windows.Forms.ToolStripMenuItem btnLDL;
         private System.Windows.Forms.ToolStripMenuItem btnInterDL;
+        private System.Windows.Forms.ToolStripMenuItem btnInterDLA;
     }
 }
 

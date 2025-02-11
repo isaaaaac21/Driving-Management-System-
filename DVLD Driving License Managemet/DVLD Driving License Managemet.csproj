@@ -82,6 +82,24 @@
     <Compile Include="Applications\Driving License Apps\FrmNewDrvLcs.Designer.cs">
       <DependentUpon>FrmNewDrvLcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\InternationalDriving License\FrmInterLcInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\InternationalDriving License\FrmInterLcInfo.Designer.cs">
+      <DependentUpon>FrmInterLcInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\InternationalDriving License\FrmInterLicenseApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\InternationalDriving License\FrmInterLicenseApp.Designer.cs">
+      <DependentUpon>FrmInterLicenseApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\InternationalDriving License\FrmInterLicenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\InternationalDriving License\FrmInterLicenses.Designer.cs">
+      <DependentUpon>FrmInterLicenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\Manage Applications Types\FrmMngAppsTypes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +179,18 @@
     <Compile Include="UserControls\CtrlDriverLicenses.Designer.cs">
       <DependentUpon>CtrlDriverLicenses.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ctrlFindLicenseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlFindLicenseInfo.Designer.cs">
+      <DependentUpon>ctrlFindLicenseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ctrlInterDLInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlInterDLInfo.Designer.cs">
+      <DependentUpon>ctrlInterDLInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ctrlLDLAInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -235,6 +265,15 @@
     <EmbeddedResource Include="Applications\Driving License Apps\FrmNewDrvLcs.resx">
       <DependentUpon>FrmNewDrvLcs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Applications\InternationalDriving License\FrmInterLcInfo.resx">
+      <DependentUpon>FrmInterLcInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\InternationalDriving License\FrmInterLicenseApp.resx">
+      <DependentUpon>FrmInterLicenseApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\InternationalDriving License\FrmInterLicenses.resx">
+      <DependentUpon>FrmInterLicenses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Applications\Manage Applications Types\FrmMngAppsTypes.resx">
       <DependentUpon>FrmMngAppsTypes.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +309,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CtrlDriverLicenses.resx">
       <DependentUpon>CtrlDriverLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ctrlFindLicenseInfo.resx">
+      <DependentUpon>ctrlFindLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ctrlInterDLInfo.resx">
+      <DependentUpon>ctrlInterDLInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ctrlLDLAInfo.resx">
       <DependentUpon>ctrlLDLAInfo.cs</DependentUpon>
@@ -564,6 +609,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Drivers10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InterNationalDrivingLicense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InterDL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LocalLc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DriverLc20.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

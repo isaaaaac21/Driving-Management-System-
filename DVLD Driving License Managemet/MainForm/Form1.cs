@@ -1,5 +1,6 @@
 ﻿using DVLD_Driving_License_Managemet.Applications;
 using DVLD_Driving_License_Managemet.Applications.Driving_License_Apps;
+using DVLD_Driving_License_Managemet.Applications.InternationalDriving_License;
 using DVLD_Driving_License_Managemet.Applications.Manage_Applications_Types;
 using DVLD_Driving_License_Managemet.Applications.ManageTestTypes;
 using DVLD_Driving_License_Managemet.ManageUsers;
@@ -90,6 +91,18 @@ namespace DVLD_Driving_License_Managemet
         {
             FrmDrivers frmDrvs = new FrmDrivers();
             frmDrvs.ShowDialog(); 
+        }
+
+        private void btnInterDL_Click(object sender, EventArgs e)
+        {
+            FrmInterLicenseApp frmInterLc = new FrmInterLicenseApp();
+            frmInterLc.ShowDialog(); 
+        }
+
+        private void btnInterDLA_Click(object sender, EventArgs e)
+        {
+            FrmInterLicenses frmInterLicenses = new FrmInterLicenses();
+            frmInterLicenses.ShowDialog(); 
         }
     }
 }

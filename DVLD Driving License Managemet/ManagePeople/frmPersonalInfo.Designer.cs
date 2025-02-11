@@ -38,7 +38,7 @@
             this.lblFormMode.AutoSize = true;
             this.lblFormMode.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFormMode.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblFormMode.Location = new System.Drawing.Point(204, 19);
+            this.lblFormMode.Location = new System.Drawing.Point(211, 19);
             this.lblFormMode.Name = "lblFormMode";
             this.lblFormMode.Size = new System.Drawing.Size(227, 35);
             this.lblFormMode.TabIndex = 3;
@@ -48,7 +48,7 @@
             // 
             this.btnClose2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose2.Location = new System.Drawing.Point(657, 354);
+            this.btnClose2.Location = new System.Drawing.Point(577, 354);
             this.btnClose2.Name = "btnClose2";
             this.btnClose2.Size = new System.Drawing.Size(77, 31);
             this.btnClose2.TabIndex = 66;
@@ -70,7 +70,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
-            this.ClientSize = new System.Drawing.Size(789, 393);
+            this.ClientSize = new System.Drawing.Size(682, 393);
             this.Controls.Add(this.ctrlInfo1);
             this.Controls.Add(this.btnClose2);
             this.Controls.Add(this.lblFormMode);

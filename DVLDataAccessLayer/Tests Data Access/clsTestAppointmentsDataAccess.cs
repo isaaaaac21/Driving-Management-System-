@@ -160,7 +160,7 @@ namespace DVLDataAccessLayer
         static public bool DeleteAllAppointmentsOfLDLA(int LDLAID)
         {
             bool isDeleted = false; 
-            int rowAffected = 0; 
+            int rowAffected = -1; 
 
             string Query = "Delete from TestAppointments Where LocalDrivingLicenseApplicationID = @LDLAID ";
 
@@ -172,7 +172,7 @@ namespace DVLDataAccessLayer
                 Connection.Open();
 
                 rowAffected = cmd.ExecuteNonQuery();
-                if (rowAffected > 0) isDeleted = true; 
+                if (rowAffected >= 0) isDeleted = true; 
 
             }
             catch (Exception ex)

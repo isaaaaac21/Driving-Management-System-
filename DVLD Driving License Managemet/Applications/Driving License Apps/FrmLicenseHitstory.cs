@@ -14,6 +14,8 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
 {
     public partial class FrmLicenseHitstory : Form
     {
+
+        //I passed person instead of the license in order to initilize person Info and to search for license by personID
         public FrmLicenseHitstory(clsPersons person)
         {
             InitializeComponent();
@@ -30,6 +32,11 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close(); 
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }
