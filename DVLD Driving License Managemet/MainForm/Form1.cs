@@ -4,6 +4,7 @@ using DVLD_Driving_License_Managemet.Applications.InternationalDriving_License;
 using DVLD_Driving_License_Managemet.Applications.Manage_Applications_Types;
 using DVLD_Driving_License_Managemet.Applications.ManageTestTypes;
 using DVLD_Driving_License_Managemet.Applications.Renew_Driving_License;
+using DVLD_Driving_License_Managemet.Applications.Replacement_for_Lost_Or_damaged;
 using DVLD_Driving_License_Managemet.ManageUsers;
 using System;
 using System.Collections.Generic;
@@ -115,6 +116,12 @@ namespace DVLD_Driving_License_Managemet
         {
             FrmRenewDLc RenewLc = new FrmRenewDLc();
             RenewLc.ShowDialog(); 
+        }
+
+        private void tsmReplace_Click(object sender, EventArgs e)
+        {
+            FrmReplace frmReplace = new FrmReplace();
+            frmReplace.ShowDialog();
         }
     }
 }

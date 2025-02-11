@@ -34,7 +34,8 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
             this.Close(); 
         }
 
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+       
+        private void showLicenseInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

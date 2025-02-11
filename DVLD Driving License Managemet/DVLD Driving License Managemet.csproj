@@ -118,6 +118,12 @@
     <Compile Include="Applications\Renew Driving License\FrmRenewDLc.Designer.cs">
       <DependentUpon>FrmRenewDLc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\Replacement for Lost Or damaged\FrmReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Replacement for Lost Or damaged\FrmReplace.Designer.cs">
+      <DependentUpon>FrmReplace.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests\FrmScheduleTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\Renew Driving License\FrmRenewDLc.resx">
       <DependentUpon>FrmRenewDLc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Replacement for Lost Or damaged\FrmReplace.resx">
+      <DependentUpon>FrmReplace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\FrmScheduleTest.resx">
       <DependentUpon>FrmScheduleTest.cs</DependentUpon>
@@ -636,6 +645,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Adding %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

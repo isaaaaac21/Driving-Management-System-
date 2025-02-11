@@ -30,6 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblNotes = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pbPerson = new System.Windows.Forms.PictureBox();
             this.lblDetained = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -70,10 +73,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblNotes = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerson)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -88,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -153,6 +153,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Driver License info";
             // 
+            // lblNotes
+            // 
+            this.lblNotes.AutoSize = true;
+            this.lblNotes.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotes.Location = new System.Drawing.Point(405, 91);
+            this.lblNotes.Name = "lblNotes";
+            this.lblNotes.Size = new System.Drawing.Size(46, 18);
+            this.lblNotes.TabIndex = 98;
+            this.lblNotes.Tag = "[????]";
+            this.lblNotes.Text = "[????]";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(275, 91);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(86, 17);
+            this.label10.TabIndex = 97;
+            this.label10.Text = "Notes             : ";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Pen;
+            this.pictureBox9.Location = new System.Drawing.Point(366, 91);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(25, 18);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 96;
+            this.pictureBox9.TabStop = false;
+            // 
             // pbPerson
             // 
             this.pbPerson.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -168,7 +199,7 @@
             // 
             this.lblDetained.AutoSize = true;
             this.lblDetained.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetained.Location = new System.Drawing.Point(405, 298);
+            this.lblDetained.Location = new System.Drawing.Point(170, 293);
             this.lblDetained.Name = "lblDetained";
             this.lblDetained.Size = new System.Drawing.Size(46, 18);
             this.lblDetained.TabIndex = 94;
@@ -179,18 +210,18 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(275, 298);
+            this.label16.Location = new System.Drawing.Point(17, 294);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(84, 17);
+            this.label16.Size = new System.Drawing.Size(108, 17);
             this.label16.TabIndex = 93;
-            this.label16.Text = "IsDetained   : ";
+            this.label16.Text = "IsDetained           : ";
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Question2;
-            this.pictureBox8.Location = new System.Drawing.Point(366, 298);
+            this.pictureBox8.Location = new System.Drawing.Point(129, 293);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(25, 18);
+            this.pictureBox8.Size = new System.Drawing.Size(16, 18);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 92;
             this.pictureBox8.TabStop = false;
@@ -222,9 +253,9 @@
             this.label15.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(275, 257);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 17);
+            this.label15.Size = new System.Drawing.Size(85, 17);
             this.label15.TabIndex = 89;
-            this.label15.Text = "ExpDate       :";
+            this.label15.Text = "ExpDate         :";
             // 
             // lblDriID
             // 
@@ -243,9 +274,9 @@
             this.label13.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(275, 214);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(81, 17);
+            this.label13.Size = new System.Drawing.Size(87, 17);
             this.label13.TabIndex = 87;
-            this.label13.Text = "Driver ID      : ";
+            this.label13.Text = "Driver ID        : ";
             // 
             // pictureBox13
             // 
@@ -284,15 +315,15 @@
             this.label12.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(275, 169);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 17);
+            this.label12.Size = new System.Drawing.Size(84, 17);
             this.label12.TabIndex = 83;
-            this.label12.Text = "Birth Date   :";
+            this.label12.Text = "Birth Date     :";
             // 
             // lblIssReason
             // 
             this.lblIssReason.AutoSize = true;
             this.lblIssReason.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIssReason.Location = new System.Drawing.Point(170, 301);
+            this.lblIssReason.Location = new System.Drawing.Point(405, 293);
             this.lblIssReason.Name = "lblIssReason";
             this.lblIssReason.Size = new System.Drawing.Size(46, 18);
             this.lblIssReason.TabIndex = 82;
@@ -302,9 +333,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.DriverLicenseSmall;
-            this.pictureBox11.Location = new System.Drawing.Point(129, 298);
+            this.pictureBox11.Location = new System.Drawing.Point(368, 286);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(16, 18);
+            this.pictureBox11.Size = new System.Drawing.Size(23, 26);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 81;
             this.pictureBox11.TabStop = false;
@@ -453,9 +484,9 @@
             this.label14.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(275, 128);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(81, 17);
+            this.label14.Size = new System.Drawing.Size(87, 17);
             this.label14.TabIndex = 62;
-            this.label14.Text = "IsActive       : ";
+            this.label14.Text = "IsActive         : ";
             // 
             // pictureBox6
             // 
@@ -472,11 +503,11 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(17, 298);
+            this.label11.Location = new System.Drawing.Point(269, 294);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 17);
+            this.label11.Size = new System.Drawing.Size(93, 17);
             this.label11.TabIndex = 60;
-            this.label11.Text = "Issue Reason      : ";
+            this.label11.Text = "Issue Reason : ";
             // 
             // pictureBox5
             // 
@@ -574,37 +605,6 @@
             this.label3.TabIndex = 154;
             this.label3.Text = "Driving License Info";
             // 
-            // lblNotes
-            // 
-            this.lblNotes.AutoSize = true;
-            this.lblNotes.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotes.Location = new System.Drawing.Point(405, 91);
-            this.lblNotes.Name = "lblNotes";
-            this.lblNotes.Size = new System.Drawing.Size(46, 18);
-            this.lblNotes.TabIndex = 98;
-            this.lblNotes.Tag = "[????]";
-            this.lblNotes.Text = "[????]";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(275, 91);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 17);
-            this.label10.TabIndex = 97;
-            this.label10.Text = "Notes           : ";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Pen;
-            this.pictureBox9.Location = new System.Drawing.Point(366, 91);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(25, 18);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 96;
-            this.pictureBox9.TabStop = false;
-            // 
             // FrmLicenseInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -622,6 +622,7 @@
             this.Load += new System.EventHandler(this.FrmLicenseInfo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerson)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -636,7 +637,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

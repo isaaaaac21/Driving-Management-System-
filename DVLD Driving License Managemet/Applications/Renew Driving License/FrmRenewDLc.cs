@@ -24,13 +24,9 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
             clsDesign.ApplyRoundedCorners(this, 20); 
         }
 
+
         private clsLicense _OldLicense;
         private clsLicense _NewLicense = new clsLicense();
-
-
-
-
-
         private clsApplication CreateApplication()
         {
             clsApplication app = new clsApplication();
@@ -53,7 +49,6 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
 
         }
 
-
         private clsLicense _CreateRenewalLicense()
         {
             clsLicense RenewLicense = new clsLicense();
@@ -71,16 +66,11 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
             return RenewLicense;
         }
 
-
-
-
         private void UpdateOldLcActStatus()
         {
             _OldLicense.isActive = false;
             _OldLicense.Save(); 
         }
-
-
         private void _UpdateCtrlsAndUpdateAcitivity(clsLicense RenLc)
         {
             lblRenewLcID.Text = RenLc.LicenseID.ToString();
@@ -89,15 +79,6 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
             btnRenew.Enabled = false; 
             UpdateOldLcActStatus();
         }
-
-
-
-
-
-
-
-
-
 
         private void _LicenseIsValid(clsLicense lc)
         {
@@ -112,7 +93,6 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
 
             EnableOrDisableButtons(true);
         }
-
 
         //this function will disable the license info butoon and renew button if valid license is found
         private void EnableOrDisableButtons(bool Enable = true)
@@ -131,15 +111,14 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
 
         private void _InitializeDefaultControls()
         {
+            clsLicenseClass lcCls = clsLicenseClass.GetLicenseClassByID(_OldLicense.LicenseClassID); 
             lblappDate.Text = DateTime.Now.ToShortDateString();
             lblIssDate.Text = DateTime.Now.ToShortDateString();
             lblAppFees.Text = clsApplicationsTypes.FindAppType(Convert.ToInt32(clsApplicationsTypes.enAppTypes.RenewDL))._AppTypeFees.ToString();
-            lblLcFees.Text = clsLicenseClass.GetLicenseClassByID(3)._ClassFess.ToString(); 
-            lblExpDate.Text = DateTime.Now.AddYears(1).ToShortDateString();
+            lblLcFees.Text = lcCls._ClassFess.ToString(); 
+            lblExpDate.Text = DateTime.Now.AddYears(lcCls._ValidityLength).ToShortDateString();
             lblUserID.Text = clsCommonThings._MainUser.UserName;
         }
-
-
 
         private void CtrlFindLicenseInfo1_objectFound(DvldBusinessLayer.clsLicense license)
         {
@@ -149,11 +128,6 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
 
           
         }
-
-       
-
-
-
 
         private void FrmRenewDLc_Load(object sender, EventArgs e)
         {
