@@ -93,6 +93,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Adding__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Adding (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Address {
             get {
                 object obj = ResourceManager.GetObject("Address", resourceCulture);
@@ -696,6 +706,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         internal static System.Drawing.Bitmap RedClose1 {
             get {
                 object obj = ResourceManager.GetObject("RedClose1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RenewLc {
+            get {
+                object obj = ResourceManager.GetObject("RenewLc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

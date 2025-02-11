@@ -112,6 +112,12 @@
     <Compile Include="Applications\Manage Applications Types\FrmUpdateAppTypes.Designer.cs">
       <DependentUpon>FrmUpdateAppTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\Renew Driving License\FrmRenewDLc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Renew Driving License\FrmRenewDLc.Designer.cs">
+      <DependentUpon>FrmRenewDLc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests\FrmScheduleTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\Manage Applications Types\FrmUpdateAppTypes.resx">
       <DependentUpon>FrmUpdateAppTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Renew Driving License\FrmRenewDLc.resx">
+      <DependentUpon>FrmRenewDLc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\FrmScheduleTest.resx">
       <DependentUpon>FrmScheduleTest.cs</DependentUpon>
@@ -621,6 +630,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DriverLc20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RenewLc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adding %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

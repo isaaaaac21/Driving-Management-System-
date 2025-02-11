@@ -1,6 +1,7 @@
 ﻿using DVLD_Driving_License_Managemet.Properties;
 using DvldBusinessLayer;
 using DvldBusinessLayer.Application_Classes;
+using DvldBusinessLayer.LicenseClasses.Drivers_Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,20 +20,40 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         {
             InitializeComponent();
             clsDesign.ApplyRoundedCorners(this, 5);
-            _currLDLA = LDLA; 
+            _CurrLicense = clsLicense.GetLicenseByInfoID(LDLA._ApplicantPersonID, LDLA.LicenseClassID);
         }
-        clsLocalDrivingLicenseApp _currLDLA;
-
-        clsLicense _CurrLicense = new clsLicense(); 
-
-        private void GetLicenseByLDLAInfo()
+        public FrmLicenseInfo(clsLicense lc)
         {
-            _CurrLicense = clsLicense.GetLicenseByInfoID(_currLDLA._ApplicantPersonID, _currLDLA.LicenseClassID); 
+            InitializeComponent();
+            clsDesign.ApplyRoundedCorners(this, 5);
+            _CurrLicense = lc; 
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        clsLicense _CurrLicense = null; 
+
+
+        private clsPersons GetPersonByLicense()
+        {
+            clsDrivers Driver = clsDrivers.GetDriverByID(_CurrLicense.DriverID);
+
+            return clsPersons.FindPerson(Driver.PersonID); 
         }
 
         private void _InitializePersonData()
         {
-            clsPersons person = clsPersons.FindPerson(_currLDLA._ApplicantPersonID);
+            clsPersons person = GetPersonByLicense(); 
             lblName.Text = person.FirstName + " " + person.SecondName + " " + person.LastName;
             lblNo.Text = person.NationalID.ToString();
             lblGen.Text = person.Gender == 0 ? "Male" : "Female";
@@ -42,7 +63,6 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         }
         private void _InitializeLicenseData()
         {
-            GetLicenseByLDLAInfo(); 
             lblLicenseClass.Text = clsLicenseClass.GetLicenseClassByID(_CurrLicense.LicenseClassID)._Name;
 
             lblLicenseID.Text = _CurrLicense.LicenseID.ToString();

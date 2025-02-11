@@ -3,6 +3,7 @@ using DVLD_Driving_License_Managemet.Applications.Driving_License_Apps;
 using DVLD_Driving_License_Managemet.Applications.InternationalDriving_License;
 using DVLD_Driving_License_Managemet.Applications.Manage_Applications_Types;
 using DVLD_Driving_License_Managemet.Applications.ManageTestTypes;
+using DVLD_Driving_License_Managemet.Applications.Renew_Driving_License;
 using DVLD_Driving_License_Managemet.ManageUsers;
 using System;
 using System.Collections.Generic;
@@ -103,6 +104,17 @@ namespace DVLD_Driving_License_Managemet
         {
             FrmInterLicenses frmInterLicenses = new FrmInterLicenses();
             frmInterLicenses.ShowDialog(); 
+        }
+
+        private void toolStripDropDownButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void renewDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRenewDLc RenewLc = new FrmRenewDLc();
+            RenewLc.ShowDialog(); 
         }
     }
 }

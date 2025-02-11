@@ -37,6 +37,7 @@
             this.btnNewDrivingLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLDL = new System.Windows.Forms.ToolStripMenuItem();
             this.btnInterDL = new System.Windows.Forms.ToolStripMenuItem();
+            this.renewDrivingLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmManageApps = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLDLA = new System.Windows.Forms.ToolStripMenuItem();
@@ -118,11 +119,13 @@
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
             this.toolStripDropDownButton2.Size = new System.Drawing.Size(147, 73);
             this.toolStripDropDownButton2.Text = "  Applications     ";
+            this.toolStripDropDownButton2.Click += new System.EventHandler(this.toolStripDropDownButton2_Click);
             // 
             // tsmDLServices
             // 
             this.tsmDLServices.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnNewDrivingLicense});
+            this.btnNewDrivingLicense,
+            this.renewDrivingLicenseToolStripMenuItem});
             this.tsmDLServices.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmDLServices.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.DriverLicense;
             this.tsmDLServices.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -135,9 +138,10 @@
             this.btnNewDrivingLicense.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnLDL,
             this.btnInterDL});
-            this.btnNewDrivingLicense.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.DrLs;
+            this.btnNewDrivingLicense.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Adding__2_;
+            this.btnNewDrivingLicense.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnNewDrivingLicense.Name = "btnNewDrivingLicense";
-            this.btnNewDrivingLicense.Size = new System.Drawing.Size(208, 24);
+            this.btnNewDrivingLicense.Size = new System.Drawing.Size(233, 30);
             this.btnNewDrivingLicense.Text = "New Driving License";
             // 
             // btnLDL
@@ -159,6 +163,15 @@
             this.btnInterDL.Size = new System.Drawing.Size(296, 54);
             this.btnInterDL.Text = "International Driving License";
             this.btnInterDL.Click += new System.EventHandler(this.btnInterDL_Click);
+            // 
+            // renewDrivingLicenseToolStripMenuItem
+            // 
+            this.renewDrivingLicenseToolStripMenuItem.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.RenewLc;
+            this.renewDrivingLicenseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.renewDrivingLicenseToolStripMenuItem.Name = "renewDrivingLicenseToolStripMenuItem";
+            this.renewDrivingLicenseToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
+            this.renewDrivingLicenseToolStripMenuItem.Text = "Renew Driving License";
+            this.renewDrivingLicenseToolStripMenuItem.Click += new System.EventHandler(this.renewDrivingLicenseToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -388,6 +401,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnLDL;
         private System.Windows.Forms.ToolStripMenuItem btnInterDL;
         private System.Windows.Forms.ToolStripMenuItem btnInterDLA;
+        private System.Windows.Forms.ToolStripMenuItem renewDrivingLicenseToolStripMenuItem;
     }
 }
 

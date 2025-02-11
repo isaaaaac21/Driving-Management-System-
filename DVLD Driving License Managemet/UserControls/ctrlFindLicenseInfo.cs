@@ -51,9 +51,9 @@ namespace DVLD_Driving_License_Managemet.UserControls
         {
             if (Lc != null)
             {
-                SendLicneseBackToForm(Lc);
                 _CurrLicense = Lc;
                 _InitializeCtrlsWithData(); 
+                SendLicneseBackToForm(Lc);
             }
             else
 
@@ -116,6 +116,11 @@ namespace DVLD_Driving_License_Managemet.UserControls
         private void txtFilter_KeyPress(object sender, KeyPressEventArgs e)
         {
             _AllowOnlyDigits(e); 
+        }
+
+        private void ctrlFindLicenseInfo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
