@@ -1,6 +1,7 @@
 ﻿using DVLD_Driving_License_Managemet.Properties;
 using DvldBusinessLayer;
 using DvldBusinessLayer.Application_Classes;
+using DvldBusinessLayer.LicenseClasses.Detain_License;
 using DvldBusinessLayer.LicenseClasses.Drivers_Classes;
 using System;
 using System.Collections.Generic;
@@ -72,7 +73,7 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
             lblExpDate.Text = _CurrLicense.ExpirationDate.ToShortDateString();
             lblIssReason.Text = _CurrLicense.IssueReason.ToString();
             lblIsAct.Text = _CurrLicense.isActive ? "Yes" : "No";
-
+            lblDetained.Text = clsDetainLicense.LicenseIsDetained(_CurrLicense.LicenseID) ? "Yes" : "No";
             lblDriID.Text = _CurrLicense.DriverID.ToString();
             lblNotes.Text = _CurrLicense.Notes; 
         }

@@ -146,3 +146,4 @@ D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_
 D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.Applications.InternationalDriving_License.FrmInterLicenses.resources
 D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.Applications.Renew_Driving_License.FrmRenewDLc.resources
 D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.Applications.Replacement_for_Lost_Or_damaged.FrmReplace.resources
+D:\F things\Programming\MyProject\DVLD Driving License Managemet\obj\Debug\DVLD_Driving_License_Managemet.Applications.DetainLicense.FrmDetainLc.resources

@@ -1,4 +1,5 @@
 ﻿using DVLD_Driving_License_Managemet.Applications;
+using DVLD_Driving_License_Managemet.Applications.DetainLicense;
 using DVLD_Driving_License_Managemet.Applications.Driving_License_Apps;
 using DVLD_Driving_License_Managemet.Applications.InternationalDriving_License;
 using DVLD_Driving_License_Managemet.Applications.Manage_Applications_Types;
@@ -122,6 +123,12 @@ namespace DVLD_Driving_License_Managemet
         {
             FrmReplace frmReplace = new FrmReplace();
             frmReplace.ShowDialog();
+        }
+
+        private void tsmDetainLc_Click(object sender, EventArgs e)
+        {
+            FrmDetainLc FrmDetLc = new FrmDetainLc();
+            FrmDetLc.ShowDialog(); 
         }
     }
 }

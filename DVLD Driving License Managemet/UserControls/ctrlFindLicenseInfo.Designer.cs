@@ -146,7 +146,7 @@
             // 
             this.lblNotes.AutoSize = true;
             this.lblNotes.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotes.Location = new System.Drawing.Point(366, 60);
+            this.lblNotes.Location = new System.Drawing.Point(382, 60);
             this.lblNotes.Name = "lblNotes";
             this.lblNotes.Size = new System.Drawing.Size(42, 17);
             this.lblNotes.TabIndex = 98;
@@ -157,16 +157,16 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(244, 60);
+            this.label10.Location = new System.Drawing.Point(243, 61);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 17);
+            this.label10.Size = new System.Drawing.Size(89, 17);
             this.label10.TabIndex = 97;
-            this.label10.Text = "Notes           : ";
+            this.label10.Text = "Notes              : ";
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Pen;
-            this.pictureBox9.Location = new System.Drawing.Point(335, 60);
+            this.pictureBox9.Location = new System.Drawing.Point(352, 59);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 18);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,7 +177,7 @@
             // 
             this.pbPerson.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbPerson.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.MaleUser;
-            this.pbPerson.Location = new System.Drawing.Point(448, 69);
+            this.pbPerson.Location = new System.Drawing.Point(447, 41);
             this.pbPerson.Name = "pbPerson";
             this.pbPerson.Size = new System.Drawing.Size(120, 121);
             this.pbPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -188,7 +188,7 @@
             // 
             this.lblDetained.AutoSize = true;
             this.lblDetained.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetained.Location = new System.Drawing.Point(366, 206);
+            this.lblDetained.Location = new System.Drawing.Point(147, 206);
             this.lblDetained.Name = "lblDetained";
             this.lblDetained.Size = new System.Drawing.Size(42, 17);
             this.lblDetained.TabIndex = 94;
@@ -199,18 +199,18 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(241, 206);
+            this.label16.Location = new System.Drawing.Point(13, 206);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(84, 17);
+            this.label16.Size = new System.Drawing.Size(108, 17);
             this.label16.TabIndex = 93;
-            this.label16.Text = "IsDetained   : ";
+            this.label16.Text = "IsDetained           : ";
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Question2;
-            this.pictureBox8.Location = new System.Drawing.Point(332, 206);
+            this.pictureBox8.Location = new System.Drawing.Point(125, 205);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(25, 18);
+            this.pictureBox8.Size = new System.Drawing.Size(16, 18);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 92;
             this.pictureBox8.TabStop = false;
@@ -218,7 +218,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.calendar;
-            this.pictureBox14.Location = new System.Drawing.Point(334, 174);
+            this.pictureBox14.Location = new System.Drawing.Point(353, 173);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(25, 18);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -229,7 +229,7 @@
             // 
             this.lblExpDate.AutoSize = true;
             this.lblExpDate.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpDate.Location = new System.Drawing.Point(366, 173);
+            this.lblExpDate.Location = new System.Drawing.Point(384, 173);
             this.lblExpDate.Name = "lblExpDate";
             this.lblExpDate.Size = new System.Drawing.Size(42, 17);
             this.lblExpDate.TabIndex = 90;
@@ -240,17 +240,17 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(244, 175);
+            this.label15.Location = new System.Drawing.Point(244, 174);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 17);
+            this.label15.Size = new System.Drawing.Size(88, 17);
             this.label15.TabIndex = 89;
-            this.label15.Text = "ExpDate       :";
+            this.label15.Text = "ExpDate          :";
             // 
             // lblDriID
             // 
             this.lblDriID.AutoSize = true;
             this.lblDriID.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDriID.Location = new System.Drawing.Point(366, 146);
+            this.lblDriID.Location = new System.Drawing.Point(382, 145);
             this.lblDriID.Name = "lblDriID";
             this.lblDriID.Size = new System.Drawing.Size(42, 17);
             this.lblDriID.TabIndex = 88;
@@ -261,16 +261,16 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(244, 146);
+            this.label13.Location = new System.Drawing.Point(243, 145);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(81, 17);
+            this.label13.Size = new System.Drawing.Size(90, 17);
             this.label13.TabIndex = 87;
-            this.label13.Text = "Driver ID      : ";
+            this.label13.Text = "Driver ID         : ";
             // 
             // pictureBox13
             // 
             this.pictureBox13.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Question2;
-            this.pictureBox13.Location = new System.Drawing.Point(335, 146);
+            this.pictureBox13.Location = new System.Drawing.Point(352, 144);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(25, 18);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -280,9 +280,9 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.calendar;
-            this.pictureBox12.Location = new System.Drawing.Point(335, 115);
+            this.pictureBox12.Location = new System.Drawing.Point(125, 146);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(25, 18);
+            this.pictureBox12.Size = new System.Drawing.Size(16, 21);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 85;
             this.pictureBox12.TabStop = false;
@@ -291,7 +291,7 @@
             // 
             this.lblBirthDate.AutoSize = true;
             this.lblBirthDate.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthDate.Location = new System.Drawing.Point(366, 116);
+            this.lblBirthDate.Location = new System.Drawing.Point(147, 146);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(42, 17);
             this.lblBirthDate.TabIndex = 84;
@@ -302,17 +302,17 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(244, 116);
+            this.label12.Location = new System.Drawing.Point(13, 146);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 17);
+            this.label12.Size = new System.Drawing.Size(105, 17);
             this.label12.TabIndex = 83;
-            this.label12.Text = "Birth Date   :";
+            this.label12.Text = "Birth Date            :";
             // 
             // lblIssReason
             // 
             this.lblIssReason.AutoSize = true;
             this.lblIssReason.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIssReason.Location = new System.Drawing.Point(147, 202);
+            this.lblIssReason.Location = new System.Drawing.Point(382, 206);
             this.lblIssReason.Name = "lblIssReason";
             this.lblIssReason.Size = new System.Drawing.Size(42, 17);
             this.lblIssReason.TabIndex = 82;
@@ -322,9 +322,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.DriverLicenseSmall;
-            this.pictureBox11.Location = new System.Drawing.Point(125, 205);
+            this.pictureBox11.Location = new System.Drawing.Point(352, 206);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(16, 18);
+            this.pictureBox11.Size = new System.Drawing.Size(25, 18);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 81;
             this.pictureBox11.TabStop = false;
@@ -332,7 +332,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.calendar;
-            this.pictureBox10.Location = new System.Drawing.Point(125, 173);
+            this.pictureBox10.Location = new System.Drawing.Point(125, 177);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(16, 18);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -343,7 +343,7 @@
             // 
             this.lblIssDate.AutoSize = true;
             this.lblIssDate.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIssDate.Location = new System.Drawing.Point(147, 172);
+            this.lblIssDate.Location = new System.Drawing.Point(147, 176);
             this.lblIssDate.Name = "lblIssDate";
             this.lblIssDate.Size = new System.Drawing.Size(42, 17);
             this.lblIssDate.TabIndex = 79;
@@ -354,7 +354,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 173);
+            this.label9.Location = new System.Drawing.Point(12, 177);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(107, 17);
             this.label9.TabIndex = 77;
@@ -426,7 +426,7 @@
             // 
             this.lblIsAct.AutoSize = true;
             this.lblIsAct.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIsAct.Location = new System.Drawing.Point(366, 88);
+            this.lblIsAct.Location = new System.Drawing.Point(382, 88);
             this.lblIsAct.Name = "lblIsAct";
             this.lblIsAct.Size = new System.Drawing.Size(42, 17);
             this.lblIsAct.TabIndex = 68;
@@ -437,7 +437,7 @@
             // 
             this.lblGen.AutoSize = true;
             this.lblGen.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGen.Location = new System.Drawing.Point(147, 144);
+            this.lblGen.Location = new System.Drawing.Point(382, 113);
             this.lblGen.Name = "lblGen";
             this.lblGen.Size = new System.Drawing.Size(42, 17);
             this.lblGen.TabIndex = 67;
@@ -471,11 +471,11 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(244, 89);
+            this.label14.Location = new System.Drawing.Point(242, 89);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(81, 17);
+            this.label14.Size = new System.Drawing.Size(90, 17);
             this.label14.TabIndex = 62;
-            this.label14.Text = "IsActive       : ";
+            this.label14.Text = "IsActive          : ";
             // 
             // pictureBox6
             // 
@@ -492,19 +492,19 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(14, 202);
+            this.label11.Location = new System.Drawing.Point(239, 206);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 17);
+            this.label11.Size = new System.Drawing.Size(93, 17);
             this.label11.TabIndex = 60;
-            this.label11.Text = "Issue Reason      : ";
+            this.label11.Text = "Issue Reason : ";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Enabled = false;
             this.pictureBox5.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.gender;
-            this.pictureBox5.Location = new System.Drawing.Point(125, 145);
+            this.pictureBox5.Location = new System.Drawing.Point(352, 116);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(16, 18);
+            this.pictureBox5.Size = new System.Drawing.Size(25, 18);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 58;
             this.pictureBox5.TabStop = false;
@@ -522,7 +522,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Question2;
-            this.pictureBox4.Location = new System.Drawing.Point(335, 89);
+            this.pictureBox4.Location = new System.Drawing.Point(352, 88);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 18);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -543,11 +543,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 145);
+            this.label5.Location = new System.Drawing.Point(244, 114);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 17);
+            this.label5.Size = new System.Drawing.Size(88, 17);
             this.label5.TabIndex = 55;
-            this.label5.Text = "Gender                  : ";
+            this.label5.Text = "Gender           : ";
             // 
             // label4
             // 
@@ -571,6 +571,7 @@
             this.groupBox2.TabIndex = 155;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filter";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnSearch
             // 

@@ -663,6 +663,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PoliceDetain {
+            get {
+                object obj = ResourceManager.GetObject("PoliceDetain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ppl3 {
             get {
                 object obj = ResourceManager.GetObject("ppl3", resourceCulture);
@@ -706,6 +716,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         internal static System.Drawing.Bitmap RedClose1 {
             get {
                 object obj = ResourceManager.GetObject("RedClose1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RelaseDet {
+            get {
+                object obj = ResourceManager.GetObject("RelaseDet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -836,6 +856,26 @@ namespace DVLD_Driving_License_Managemet.Properties {
         internal static System.Drawing.Bitmap steerinWheel2 {
             get {
                 object obj = ResourceManager.GetObject("steerinWheel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stop {
+            get {
+                object obj = ResourceManager.GetObject("Stop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stop2 {
+            get {
+                object obj = ResourceManager.GetObject("Stop2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

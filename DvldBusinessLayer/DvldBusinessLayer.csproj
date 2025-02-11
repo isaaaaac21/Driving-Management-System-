@@ -47,6 +47,7 @@
     <Compile Include="LicenseClasses\clsInterDL.cs" />
     <Compile Include="LicenseClasses\clsLicense.cs" />
     <Compile Include="LicenseClasses\clsLicenseClass.cs" />
+    <Compile Include="LicenseClasses\Detain License\clsDetainLicense.cs" />
     <Compile Include="LicenseClasses\Drivers Classes\clsDrivers.cs" />
     <Compile Include="Test Classes\clsTestAppointment.cs" />
     <Compile Include="Test Classes\clsTests.cs" />

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Applications\DetainLicense\FrmDetainLc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\DetainLicense\FrmDetainLc.Designer.cs">
+      <DependentUpon>FrmDetainLc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\Driving License Apps\FrmDrivers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     <Compile Include="UserControls\ctrlUserInfo.Designer.cs">
       <DependentUpon>ctrlUserInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Applications\DetainLicense\FrmDetainLc.resx">
+      <DependentUpon>FrmDetainLc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Applications\Driving License Apps\FrmDrivers.resx">
       <DependentUpon>FrmDrivers.cs</DependentUpon>
     </EmbeddedResource>
@@ -648,6 +657,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoliceDetain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RelaseDet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,7 @@
 ﻿using DVLD_Driving_License_Managemet.Properties;
 using DvldBusinessLayer;
 using DvldBusinessLayer.Application_Classes;
+using DvldBusinessLayer.LicenseClasses.Detain_License;
 using DvldBusinessLayer.LicenseClasses.Drivers_Classes;
 using System;
 using System.Collections.Generic;
@@ -96,6 +97,8 @@ namespace DVLD_Driving_License_Managemet.UserControls
 
             lblDriID.Text = _CurrLicense.DriverID.ToString();
             lblNotes.Text = _CurrLicense.Notes;
+
+            lblDetained.Text = clsDetainLicense.LicenseIsDetained(_CurrLicense.LicenseID) ? "Yes" : "No"; 
         }
         private void _InitializeCtrlsWithData()
         {
@@ -119,6 +122,11 @@ namespace DVLD_Driving_License_Managemet.UserControls
         }
 
         private void ctrlFindLicenseInfo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
