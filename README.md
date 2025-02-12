@@ -1,178 +1,39 @@
-Driving License Management System (DVLD)
+# Driving License Management System
 
-Overview
+## Overview
 
-The Driving & Vehicle License Department (DVLD) is responsible for issuing and managing driver’s licenses. This system ensures structured license management and safer roads.
+The Driving License Management System is a Windows desktop application designed to manage the entire process of driving license issuance, applications, tests, and driver records. The application provides a structured and user-friendly interface for government authorities, driving schools, and administrators to efficiently handle licenses, tests, and applicant data.
 
-Features
+## Key Features
 
-Core Services
+1. **User Authentication & Management**
+    * Secure user login system to manage access control.
+    * Role-based access to ensure only authorized users can manage license-related tasks.
+    * Stores personal details of users and applicants, including nationality, contact information, and profile images.
 
-New Driver’s License Issuance ($5)
+2. **Driver & License Management**
+    * Register new drivers and maintain a record of their applications and issued licenses.
+    * Track license issuance, expiration, fees, and renewal processes.
+    * Support for different license classes, including age restrictions and validity duration.
+    * Manage detained licenses, fines, and release processes.
 
-Re-examination Service ($5)
+3. **Application & Approval Workflow**
+    * Applicants can submit driving license applications through the system.
+    * Administrators can review, approve, or reject applications.
+    * Tracks application fees, status updates, and approval history.
 
-License Renewal ($5)
+4. **Driving Test Scheduling & Results**
+    * Schedule and manage driving test appointments.
+    * Different test types (written, practical) with associated fees.
+    * Store and retrieve test results, allowing applicants to retake tests if necessary.
 
-Lost License Replacement ($5)
+5. **Country & Nationality Support**
+    * Manages nationality and residency details for applicants.
+    * Integrated with country-based regulations for licensing.
 
-Damaged License Replacement ($5)
+## Technology Stack
 
-License Suspension Removal ($5)
-
-International License Issuance ($5)
-
-License Categories & Fees
-
-Category
-
-Description
-
-Minimum Age
-
-Fee
-
-Validity
-
-Small Motorcycle
-
-Low-power motorcycles
-
-18
-
-$15
-
-5 years
-
-Heavy Motorcycle
-
-High-power motorcycles
-
-21
-
-$30
-
-5 years
-
-Regular Driver’s License
-
-Light vehicles
-
-18
-
-$20
-
-10 years
-
-Commercial License
-
-Taxi/Limousine
-
-21
-
-$200
-
-10 years
-
-Agricultural Vehicles
-
-Tractors/Farm Equipment
-
-21
-
-$50
-
-10 years
-
-Small/Medium Buses
-
-Public Transport
-
-21
-
-$250
-
-10 years
-
-Heavy Vehicles
-
-Trucks/Heavy Transport
-
-21
-
-$300
-
-10 years
-
-License Eligibility Requirements
-
-Must meet the minimum age for the license category.
-
-Cannot hold a license of the same category.
-
-Can hold multiple licenses of different categories.
-
-Must provide valid personal identification.
-
-Must complete required driving training.
-
-Testing Process
-
-Vision Test ($10)
-
-Ensures eyesight is adequate for driving.
-
-Written Knowledge Test ($20)
-
-Evaluates road safety and traffic rules knowledge.
-
-Practical Driving Test (Fee varies by category)
-
-Assesses driving skills.
-
-Additional Services
-
-License Renewal ($10) – Requires a vision test.
-
-Lost License Replacement ($20) – Cannot be suspended.
-
-Damaged License Replacement ($20) – Requires surrendering old license.
-
-License Suspension Removal – Upon paying a fine.
-
-International License Issuance ($20) – Only for valid regular licenses.
-
-System Administration
-
-User Management – Add/Edit/Delete users, manage permissions.
-
-Applicant Management – Prevent duplicate records, search by National ID.
-
-Request Management – View, filter, and modify requests.
-
-Exam & License Category Management – Adjust test fees, age requirements.
-
-License Suspension Management – Track suspensions, log reasons.
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/your-username/dvld-system.git
-
-Install dependencies:
-
-npm install
-
-Start the application:
-
-npm start
-
-Contribution
-
-Feel free to submit pull requests and report issues!
-
-License
-
-This project is licensed under the MIT License.
-
+*   **Programming Language:** C# (.NET Framework)
+*   **UI Framework:** Windows Forms (WinForms)
+*   **Database:** Microsoft SQL Server
+*   **Architecture:** Layered architecture for scalability and maintainability
