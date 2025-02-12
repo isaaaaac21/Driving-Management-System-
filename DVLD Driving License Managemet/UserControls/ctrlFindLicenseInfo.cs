@@ -28,6 +28,22 @@ namespace DVLD_Driving_License_Managemet.UserControls
 
         private clsLicense _CurrLicense  ; 
 
+        
+
+        private void _EnableThisUserCtrl()
+        {
+            this.Enabled = false; 
+        }
+
+        //this function will be used if we clicked on a license and passed its value directly to this form, there will be no searching
+        public void RecievePreparedLicense(clsLicense lc)
+        {
+            _CurrLicense = lc;
+            txtFilter.Text = lc.LicenseID.ToString(); 
+            _InitializePersonData();
+            _InitializeLicenseData();
+            _EnableThisUserCtrl(); 
+        }
         private bool _ValidInput()
         {
             if (string.IsNullOrEmpty(txtFilter.Text))

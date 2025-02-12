@@ -74,10 +74,10 @@ namespace DVLD_Driving_License_Managemet
             {
                 File.WriteAllText(_Path, _ReturnInfoInOneString());     
             }
-            //else
-            //{
-            //    File.WriteAllText(_Path, string.Empty); 
-            //}
+            else
+            {
+                File.WriteAllText(_Path, string.Empty);
+            }
         }
         private void _ShowOrHidePassword()
         {

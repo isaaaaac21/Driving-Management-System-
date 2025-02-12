@@ -383,6 +383,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fusers {
+            get {
+                object obj = ResourceManager.GetObject("Fusers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gender {
             get {
                 object obj = ResourceManager.GetObject("gender", resourceCulture);
@@ -946,6 +956,16 @@ namespace DVLD_Driving_License_Managemet.Properties {
         internal static System.Drawing.Bitmap Writing1 {
             get {
                 object obj = ResourceManager.GetObject("Writing1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap X {
+            get {
+                object obj = ResourceManager.GetObject("X", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

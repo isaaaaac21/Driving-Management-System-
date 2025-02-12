@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblMode = new System.Windows.Forms.Label();
             this.tb1 = new System.Windows.Forms.TabControl();
             this.tbInfo = new System.Windows.Forms.TabPage();
             this.ctrlFilter2 = new DVLD_Driving_License_Managemet.ctrlFilter();
@@ -45,32 +44,22 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnClose = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnClose = new System.Windows.Forms.Button();
+            this.lblMode = new System.Windows.Forms.Label();
             this.tb1.SuspendLayout();
             this.tbInfo.SuspendLayout();
             this.tbLoginInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblMode
-            // 
-            this.lblMode.AutoSize = true;
-            this.lblMode.Font = new System.Drawing.Font("Cooper Black", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMode.ForeColor = System.Drawing.Color.Black;
-            this.lblMode.Location = new System.Drawing.Point(230, 9);
-            this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(277, 40);
-            this.lblMode.TabIndex = 3;
-            this.lblMode.Text = "Add New User";
             // 
             // tb1
             // 
@@ -246,24 +235,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "UserID                   : ";
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.BackgroundImage = global::DVLD_Driving_License_Managemet.Properties.Resources.Closing;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(677, 9);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(32, 30);
-            this.btnClose.TabIndex = 5;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.password;
@@ -304,15 +275,44 @@
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImage = global::DVLD_Driving_License_Managemet.Properties.Resources.Closing;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Location = new System.Drawing.Point(677, 9);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(32, 30);
+            this.btnClose.TabIndex = 5;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // lblMode
+            // 
+            this.lblMode.AutoSize = true;
+            this.lblMode.Font = new System.Drawing.Font("Franklin Gothic Demi", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMode.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblMode.Location = new System.Drawing.Point(234, 9);
+            this.lblMode.Name = "lblMode";
+            this.lblMode.Size = new System.Drawing.Size(225, 41);
+            this.lblMode.TabIndex = 43;
+            this.lblMode.Text = "Add new user";
+            // 
             // AddUserFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(744, 551);
+            this.Controls.Add(this.lblMode);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.tb1);
-            this.Controls.Add(this.lblMode);
             this.Name = "AddUserFrm";
             this.Text = "AddUserFrm";
             this.Load += new System.EventHandler(this.AddUserFrm_Load);
@@ -320,19 +320,17 @@
             this.tbInfo.ResumeLayout(false);
             this.tbLoginInfo.ResumeLayout(false);
             this.tbLoginInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblMode;
         private System.Windows.Forms.TabControl tb1;
         private System.Windows.Forms.TabPage tbInfo;
         private System.Windows.Forms.TabPage tbLoginInfo;
@@ -354,5 +352,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private ctrlFilter ctrlFilter2;
+        private System.Windows.Forms.Label lblMode;
     }
 }

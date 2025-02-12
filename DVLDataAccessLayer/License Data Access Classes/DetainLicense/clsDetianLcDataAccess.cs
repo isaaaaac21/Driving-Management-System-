@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Security.AccessControl;
@@ -13,6 +14,48 @@ namespace DVLDataAccessLayer.License_Data_Access_Classes.DetainLicense
         static public SqlConnection Connection = new SqlConnection(clsShared.ConnectionString);
 
         //int DetID, int lcID, DateTime DetTime, decimal fees, int userID, bool isRel, DateTime relDate, int RelUserID, int RelAppID
+
+
+
+
+        static public DataTable GetDetainedLicensesList()
+        {
+            DataTable Dt = new DataTable();
+
+            string Query = "select D.DetainID as DetID, D.LicenseID as LcID,  D.FineFees, D.ReleaseDate, NationalNo as NatNo, " +
+                "P.FirstName + ' ' + P.SecondName + ' ' + P.LastName as FullName, D.ReleaseApplicationID as RelAppID,  " +
+                " IIF (IsReleased = 1, 'Yes'," +
+                " IIF (IsReleased = 0, 'No', 'Unknown')) as IsReleased " +
+                "from DetainedLicenses D " +
+                "Inner join Licenses L On D.LicenseID = L.LicenseID " +
+                "Inner join Drivers Dr On L.DriverID = Dr.DriverID " +
+                "Inner join People P On Dr.PersonID = P.PersonID ; ";
+
+            SqlCommand cmd = new SqlCommand(Query, Connection); 
+
+            try
+            {
+                Connection.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                Dt.Load(reader);
+                reader.Close(); 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                Connection.Close();
+            }
+
+            return Dt; 
+        }
+
+
+
 
         static public bool GetDetainedLicenseByLcID(int LcID, ref int DetID, ref DateTime DetDate, ref decimal fees, ref int userID, ref bool isRelease,
             ref DateTime? ReleaseDate, ref int? RelUserID, ref int? RelAppID) 
@@ -37,10 +80,9 @@ namespace DVLDataAccessLayer.License_Data_Access_Classes.DetainLicense
                     DetDate = Convert.ToDateTime(reader["DetainDate"]);
                     userID = Convert.ToInt32(reader["CreatedByUserID"]);
                     isRelease = Convert.ToBoolean(reader["IsReleased"]);
-                    ReleaseDate = Convert.ToDateTime(reader["ReleaseDate"]);
-                    fees = Convert.ToDecimal(reader["FineFeess"]);
+                    fees = Convert.ToDecimal(reader["FineFees"]);
 
-                    if (reader["ReleaseByUserID"] == DBNull.Value) RelUserID = null;
+                    if (reader["ReleasedByUserID"] == DBNull.Value) RelUserID = null;
                     else RelUserID = Convert.ToInt32(reader["ReleaseByUserID"]);
 
                     if (reader["ReleaseDate"] == DBNull.Value) ReleaseDate = null;

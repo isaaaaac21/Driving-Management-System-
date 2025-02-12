@@ -36,19 +36,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dgvList = new System.Windows.Forms.DataGridView();
             this.cmsActionsList = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmShowDet = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmAdd = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmEdit = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmDelete = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmChangePass = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbAct = new System.Windows.Forms.ComboBox();
             this.DebouncingTimer = new System.Windows.Forms.Timer(this.components);
-            this.btnClose1 = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnClose1 = new System.Windows.Forms.Button();
+            this.cmShowDet = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmChangePass = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             this.cmsActionsList.SuspendLayout();
@@ -124,7 +124,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvList.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvList.BackgroundColor = System.Drawing.Color.RosyBrown;
             this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvList.ContextMenuStrip = this.cmsActionsList;
             this.dgvList.Location = new System.Drawing.Point(12, 217);
@@ -146,6 +146,90 @@
             this.cmsActionsList.Name = "cmsActionsList";
             this.cmsActionsList.Size = new System.Drawing.Size(178, 155);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(174, 6);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label1.Location = new System.Drawing.Point(341, 131);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(231, 41);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Manage Users";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label2.Location = new System.Drawing.Point(0, 1);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 15);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Manage Users";
+            // 
+            // cbAct
+            // 
+            this.cbAct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbAct.FormattingEnabled = true;
+            this.cbAct.Items.AddRange(new object[] {
+            "All",
+            "No",
+            "Yes"});
+            this.cbAct.Location = new System.Drawing.Point(245, 190);
+            this.cbAct.Name = "cbAct";
+            this.cbAct.Size = new System.Drawing.Size(75, 21);
+            this.cbAct.TabIndex = 44;
+            this.cbAct.Visible = false;
+            this.cbAct.SelectedIndexChanged += new System.EventHandler(this.cbAct_SelectedIndexChanged);
+            // 
+            // DebouncingTimer
+            // 
+            this.DebouncingTimer.Interval = 500;
+            this.DebouncingTimer.Tick += new System.EventHandler(this.DebouncingTimer_Tick);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImage = global::DVLD_Driving_License_Managemet.Properties.Resources.Closing;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Location = new System.Drawing.Point(925, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(32, 30);
+            this.btnClose.TabIndex = 45;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Fusers;
+            this.pictureBox1.Location = new System.Drawing.Point(340, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(219, 141);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnClose1
+            // 
+            this.btnClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose1.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.RedClose;
+            this.btnClose1.Location = new System.Drawing.Point(901, 475);
+            this.btnClose1.Name = "btnClose1";
+            this.btnClose1.Size = new System.Drawing.Size(64, 26);
+            this.btnClose1.TabIndex = 39;
+            this.btnClose1.Text = "Close";
+            this.btnClose1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClose1.UseVisualStyleBackColor = true;
+            this.btnClose1.Click += new System.EventHandler(this.btnClose1_Click);
+            // 
             // cmShowDet
             // 
             this.cmShowDet.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -155,11 +239,6 @@
             this.cmShowDet.Size = new System.Drawing.Size(177, 24);
             this.cmShowDet.Text = "ShowDetails";
             this.cmShowDet.Click += new System.EventHandler(this.cmShowDet_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(174, 6);
             // 
             // cmAdd
             // 
@@ -201,85 +280,6 @@
             this.cmChangePass.Text = "Change Password";
             this.cmChangePass.Click += new System.EventHandler(this.cmChangePass_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Location = new System.Drawing.Point(341, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 41);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Manage Users";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label2.Location = new System.Drawing.Point(0, 1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 15);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "Manage Users";
-            // 
-            // cbAct
-            // 
-            this.cbAct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbAct.FormattingEnabled = true;
-            this.cbAct.Items.AddRange(new object[] {
-            "All",
-            "No",
-            "Yes"});
-            this.cbAct.Location = new System.Drawing.Point(245, 190);
-            this.cbAct.Name = "cbAct";
-            this.cbAct.Size = new System.Drawing.Size(75, 21);
-            this.cbAct.TabIndex = 44;
-            this.cbAct.Visible = false;
-            this.cbAct.SelectedIndexChanged += new System.EventHandler(this.cbAct_SelectedIndexChanged);
-            // 
-            // DebouncingTimer
-            // 
-            this.DebouncingTimer.Interval = 500;
-            this.DebouncingTimer.Tick += new System.EventHandler(this.DebouncingTimer_Tick);
-            // 
-            // btnClose1
-            // 
-            this.btnClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose1.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.RedClose;
-            this.btnClose1.Location = new System.Drawing.Point(901, 475);
-            this.btnClose1.Name = "btnClose1";
-            this.btnClose1.Size = new System.Drawing.Size(64, 26);
-            this.btnClose1.TabIndex = 39;
-            this.btnClose1.Text = "Close";
-            this.btnClose1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClose1.UseVisualStyleBackColor = true;
-            this.btnClose1.Click += new System.EventHandler(this.btnClose1_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.BackgroundImage = global::DVLD_Driving_License_Managemet.Properties.Resources.Closing;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(925, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(32, 30);
-            this.btnClose.TabIndex = 45;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Users;
-            this.pictureBox1.Location = new System.Drawing.Point(363, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 111);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnAdd
             // 
             this.btnAdd.BackgroundImage = global::DVLD_Driving_License_Managemet.Properties.Resources.Add_person;
@@ -295,6 +295,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(977, 511);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.cbAct);

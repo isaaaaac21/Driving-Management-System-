@@ -1,4 +1,5 @@
-﻿using DvldBusinessLayer.LicenseClasses.Drivers_Classes;
+﻿using DvldBusinessLayer;
+using DvldBusinessLayer.LicenseClasses.Drivers_Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,6 +39,7 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
                 {
                     case "DriverID":
                     case "PersonID":
+                    case "AcitveLicenses":
                         if (int.TryParse(txtFilter.Text, out _)) Dv.RowFilter = $"{_Filtering} = {txtFilter.Text}";
                         else
                             Dv.RowFilter = "1 = 0";
@@ -92,7 +94,7 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
 
         private void _PreventLettersInPersonIDFilter(KeyPressEventArgs e)
         {
-            if (_Filtering == "PersonID" || _Filtering == "DriverID")
+            if (_Filtering == "PersonID" || _Filtering == "DriverID" || _Filtering == "AcitveLicenses")
             {
                 if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
                 {
@@ -102,6 +104,16 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         }
 
 
+
+        private clsDrivers _ReturnClickedDriver()
+        {
+            int ID = -1; 
+            if (dgvList.CurrentRow.Index >= 0)
+            {
+                ID = Convert.ToInt32(dgvList.CurrentRow.Cells["DriverID"].Value); 
+            }
+            return clsDrivers.GetDriverByID(ID); 
+        }
 
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -134,6 +146,15 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         {
             _DebouncingTimer.Stop();
             _DebouncingTimer.Start(); 
+        }
+
+        private void showDriverLicensesHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clsDrivers Dr = _ReturnClickedDriver();
+            clsPersons Per = clsPersons.FindPerson(Dr.PersonID);
+
+            FrmLicenseHitstory lcHis = new FrmLicenseHitstory(Per);
+            lcHis.ShowDialog(); 
         }
     }
 }

@@ -73,11 +73,21 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
         }
         private void _UpdateCtrlsAndUpdateAcitivity(clsLicense RenLc)
         {
+           
             lblRenewLcID.Text = RenLc.LicenseID.ToString();
             lblAppID.Text = RenLc.ApplicationID.ToString();
             lkLcInfo.Enabled = true;
             btnRenew.Enabled = false; 
             UpdateOldLcActStatus();
+        }
+
+
+        //this function will initialize fees and license class labels based on the found license
+        private void _FinishInitilization()
+        {
+            clsLicenseClass lcCls = clsLicenseClass.GetLicenseClassByID(_OldLicense.LicenseClassID);
+            lblLcFees.Text = lcCls._ClassFess.ToString();
+            lblExpDate.Text = DateTime.Now.AddYears(lcCls._ValidityLength).ToShortDateString();
         }
 
         private void _LicenseIsValid(clsLicense lc)
@@ -92,6 +102,7 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
             // if license is not valid the issue button will be enabled since we need to renew it 
 
             EnableOrDisableButtons(true);
+            _FinishInitilization(); 
         }
 
         //this function will disable the license info butoon and renew button if valid license is found
@@ -111,12 +122,11 @@ namespace DVLD_Driving_License_Managemet.Applications.Renew_Driving_License
 
         private void _InitializeDefaultControls()
         {
-            clsLicenseClass lcCls = clsLicenseClass.GetLicenseClassByID(_OldLicense.LicenseClassID); 
+           
             lblappDate.Text = DateTime.Now.ToShortDateString();
             lblIssDate.Text = DateTime.Now.ToShortDateString();
             lblAppFees.Text = clsApplicationsTypes.FindAppType(Convert.ToInt32(clsApplicationsTypes.enAppTypes.RenewDL))._AppTypeFees.ToString();
-            lblLcFees.Text = lcCls._ClassFess.ToString(); 
-            lblExpDate.Text = DateTime.Now.AddYears(lcCls._ValidityLength).ToShortDateString();
+           
             lblUserID.Text = clsCommonThings._MainUser.UserName;
         }
 

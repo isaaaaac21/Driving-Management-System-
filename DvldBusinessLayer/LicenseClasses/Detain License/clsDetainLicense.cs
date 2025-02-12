@@ -1,6 +1,7 @@
 ﻿using DVLDataAccessLayer.License_Data_Access_Classes.DetainLicense;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -114,7 +115,10 @@ namespace DvldBusinessLayer.LicenseClasses.Detain_License
         }
 
 
-
+        static public DataTable GetDetainedLicenseList()
+        {
+            return clsDetianLcDataAccess.GetDetainedLicensesList(); 
+        }
 
     }
 }

@@ -16,6 +16,7 @@ namespace DVLD_Driving_License_Managemet
         public frmUsers()
         {
             InitializeComponent();
+            clsDesign.ApplyRoundedCorners(this, 20);
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen; 
         }

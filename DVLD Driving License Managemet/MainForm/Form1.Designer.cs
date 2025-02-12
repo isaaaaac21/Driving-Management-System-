@@ -62,6 +62,8 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tmSignOut = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmReleaseDet = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -132,7 +134,9 @@
             this.btnNewDrivingLicense,
             this.renewDrivingLicenseToolStripMenuItem,
             this.toolStripSeparator6,
-            this.tsmReplace});
+            this.tsmReplace,
+            this.toolStripSeparator7,
+            this.tsmReleaseDet});
             this.tsmDLServices.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsmDLServices.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.DriverLicense;
             this.tsmDLServices.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -257,6 +261,7 @@
             this.tsmMngDetLcs.Name = "tsmMngDetLcs";
             this.tsmMngDetLcs.Size = new System.Drawing.Size(267, 30);
             this.tsmMngDetLcs.Text = "Manage Detained Licenses";
+            this.tsmMngDetLcs.Click += new System.EventHandler(this.tsmMngDetLcs_Click);
             // 
             // tsmDetainLc
             // 
@@ -274,6 +279,7 @@
             this.tsmReleaseLc.Name = "tsmReleaseLc";
             this.tsmReleaseLc.Size = new System.Drawing.Size(267, 30);
             this.tsmReleaseLc.Text = "Release a Detained License";
+            this.tsmReleaseLc.Click += new System.EventHandler(this.tsmReleaseLc_Click);
             // 
             // toolStripSeparator4
             // 
@@ -402,6 +408,20 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(302, 6);
+            // 
+            // tsmReleaseDet
+            // 
+            this.tsmReleaseDet.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.RelaseDet;
+            this.tsmReleaseDet.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsmReleaseDet.Name = "tsmReleaseDet";
+            this.tsmReleaseDet.Size = new System.Drawing.Size(305, 30);
+            this.tsmReleaseDet.Text = "Release a detained license";
+            this.tsmReleaseDet.Click += new System.EventHandler(this.tsmReleaseDet_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,6 +477,8 @@
         private System.Windows.Forms.ToolStripMenuItem tsmMngDetLcs;
         private System.Windows.Forms.ToolStripMenuItem tsmDetainLc;
         private System.Windows.Forms.ToolStripMenuItem tsmReleaseLc;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripMenuItem tsmReleaseDet;
     }
 }
 

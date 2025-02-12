@@ -3,62 +3,72 @@
   "WorkspaceRootPath": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\detainlicense\\frmdetainlc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\detainlicense\\frmdetainlc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\manageusers\\adduserfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:manageusers\\adduserfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0322F816-FB9F-4B31-8968-1193C3B95D6C}|..\\DVLDataAccessLayer\\DVLDataAccessLayer.csproj|d:\\f things\\programming\\myproject\\dvldataaccesslayer\\license data access classes\\detainlicense\\clsdetianlcdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\manageusers\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:manageusers\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\usercontrols\\ctrlfindlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:usercontrols\\ctrlfindlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\manageusers\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:manageusers\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\replacement for lost or damaged\\frmreplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\replacement for lost or damaged\\frmreplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\mainform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:mainform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\replacement for lost or damaged\\frmreplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\replacement for lost or damaged\\frmreplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\renew driving license\\frmrenewdlc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\renew driving license\\frmrenewdlc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\detainlicense\\frmreleasedetained.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\detainlicense\\frmreleasedetained.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\mainform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:mainform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\mainform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:mainform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\detainlicense\\frmdetainlc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\detainlicense\\frmdetainlc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\driving license apps\\frmlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\driving license apps\\frmlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\usercontrols\\ctrlfindlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:usercontrols\\ctrlfindlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\driving license apps\\frmlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\driving license apps\\frmlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{581CF6EB-0F99-4320-8FB8-CFBC91A8ACDD}|..\\DvldBusinessLayer\\DvldBusinessLayer.csproj|d:\\f things\\programming\\myproject\\dvldbusinesslayer\\licenseclasses\\detain license\\clsdetainlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\detainlicense\\frmreleasedetained.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\detainlicense\\frmreleasedetained.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\mainform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:mainform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\mainform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:mainform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\driving license apps\\frmdrivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\driving license apps\\frmdrivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\usercontrols\\ctrlinterdlinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:usercontrols\\ctrlinterdlinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\driving license apps\\frmdrivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\driving license apps\\frmdrivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\internationaldriving license\\frminterlicenseapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\internationaldriving license\\frminterlicenseapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\detainlicense\\frmmngdetlcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\detainlicense\\frmmngdetlcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\renew driving license\\frmrenewdlc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\renew driving license\\frmrenewdlc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\detainlicense\\frmmngdetlcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\detainlicense\\frmmngdetlcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\usercontrols\\ctrlfindlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:usercontrols\\ctrlfindlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\usercontrols\\ctrlfindlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:usercontrols\\ctrlfindlicenseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -80,129 +90,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmLicenseInfo.cs [Design]",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmLicenseInfo.cs",
-              "RelativeDocumentMoniker": "Applications\\Driving License Apps\\FrmLicenseInfo.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmLicenseInfo.cs [Design]",
-              "RelativeToolTip": "Applications\\Driving License Apps\\FrmLicenseInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T21:42:25.376Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ctrlFindLicenseInfo.cs [Design]",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlFindLicenseInfo.cs",
-              "RelativeDocumentMoniker": "UserControls\\ctrlFindLicenseInfo.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlFindLicenseInfo.cs [Design]",
-              "RelativeToolTip": "UserControls\\ctrlFindLicenseInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T21:42:00.48Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsDetianLcDataAccess.cs",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLDataAccessLayer\\License Data Access Classes\\DetainLicense\\clsDetianLcDataAccess.cs",
-              "RelativeDocumentMoniker": "..\\DVLDataAccessLayer\\License Data Access Classes\\DetainLicense\\clsDetianLcDataAccess.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLDataAccessLayer\\License Data Access Classes\\DetainLicense\\clsDetianLcDataAccess.cs",
-              "RelativeToolTip": "..\\DVLDataAccessLayer\\License Data Access Classes\\DetainLicense\\clsDetianLcDataAccess.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAowBYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T21:29:01.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmDetainLc.cs",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmDetainLc.cs",
-              "RelativeDocumentMoniker": "Applications\\DetainLicense\\FrmDetainLc.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmDetainLc.cs",
-              "RelativeToolTip": "Applications\\DetainLicense\\FrmDetainLc.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAmwKQAAABCAAAAAAAAAA==",
+              "Title": "AddUserFrm.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\ManageUsers\\AddUserFrm.cs",
+              "RelativeDocumentMoniker": "ManageUsers\\AddUserFrm.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\ManageUsers\\AddUserFrm.cs [Design]",
+              "RelativeToolTip": "ManageUsers\\AddUserFrm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T13:50:19.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmDetainLc.cs [Design]",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmDetainLc.cs",
-              "RelativeDocumentMoniker": "Applications\\DetainLicense\\FrmDetainLc.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmDetainLc.cs [Design]",
-              "RelativeToolTip": "Applications\\DetainLicense\\FrmDetainLc.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T13:48:27.649Z",
+              "WhenOpened": "2025-02-12T11:42:28.081Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FrmReplace.cs [Design]",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Replacement for Lost Or damaged\\FrmReplace.cs",
-              "RelativeDocumentMoniker": "Applications\\Replacement for Lost Or damaged\\FrmReplace.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Replacement for Lost Or damaged\\FrmReplace.cs [Design]",
-              "RelativeToolTip": "Applications\\Replacement for Lost Or damaged\\FrmReplace.cs [Design]",
+              "Title": "FrmRenewDLc.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Renew Driving License\\FrmRenewDLc.cs",
+              "RelativeDocumentMoniker": "Applications\\Renew Driving License\\FrmRenewDLc.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Renew Driving License\\FrmRenewDLc.cs",
+              "RelativeToolTip": "Applications\\Renew Driving License\\FrmRenewDLc.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAArwGgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T10:20:20.575Z",
+              "WhenOpened": "2025-02-12T10:14:55.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmUsers.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\ManageUsers\\frmUsers.cs",
+              "RelativeDocumentMoniker": "ManageUsers\\frmUsers.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\ManageUsers\\frmUsers.cs",
+              "RelativeToolTip": "ManageUsers\\frmUsers.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAhwBIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T11:27:52.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmUsers.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\ManageUsers\\frmUsers.cs",
+              "RelativeDocumentMoniker": "ManageUsers\\frmUsers.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\ManageUsers\\frmUsers.cs [Design]",
+              "RelativeToolTip": "ManageUsers\\frmUsers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T11:27:52.26Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FrmReplace.cs",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Replacement for Lost Or damaged\\FrmReplace.cs",
-              "RelativeDocumentMoniker": "Applications\\Replacement for Lost Or damaged\\FrmReplace.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Replacement for Lost Or damaged\\FrmReplace.cs",
-              "RelativeToolTip": "Applications\\Replacement for Lost Or damaged\\FrmReplace.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAuwOcAAAAMAAAAAAAAAA==",
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\MainForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "MainForm\\LoginForm.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\MainForm\\LoginForm.cs",
+              "RelativeToolTip": "MainForm\\LoginForm.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAwwGMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T10:26:36.869Z",
+              "WhenOpened": "2025-02-12T11:18:23.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ctrlFindLicenseInfo.cs",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlFindLicenseInfo.cs",
-              "RelativeDocumentMoniker": "UserControls\\ctrlFindLicenseInfo.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlFindLicenseInfo.cs",
-              "RelativeToolTip": "UserControls\\ctrlFindLicenseInfo.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAcwGQAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\MainForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "MainForm\\LoginForm.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\MainForm\\LoginForm.cs [Design]",
+              "RelativeToolTip": "MainForm\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T21:42:01.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FrmLicenseInfo.cs",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmLicenseInfo.cs",
-              "RelativeDocumentMoniker": "Applications\\Driving License Apps\\FrmLicenseInfo.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmLicenseInfo.cs",
-              "RelativeToolTip": "Applications\\Driving License Apps\\FrmLicenseInfo.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAA8wEsAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T21:42:26.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "clsDetainLicense.cs",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DvldBusinessLayer\\LicenseClasses\\Detain License\\clsDetainLicense.cs",
-              "RelativeDocumentMoniker": "..\\DvldBusinessLayer\\LicenseClasses\\Detain License\\clsDetainLicense.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DvldBusinessLayer\\LicenseClasses\\Detain License\\clsDetainLicense.cs",
-              "RelativeToolTip": "..\\DvldBusinessLayer\\LicenseClasses\\Detain License\\clsDetainLicense.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAqwFYAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T14:08:01.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T11:18:21.64Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -212,14 +171,126 @@
               "RelativeDocumentMoniker": "MainForm\\Form1.cs",
               "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\MainForm\\Form1.cs",
               "RelativeToolTip": "MainForm\\Form1.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAwIIAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T21:12:41.808Z",
+              "WhenOpened": "2025-02-12T11:16:55.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "FrmDrivers.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmDrivers.cs",
+              "RelativeDocumentMoniker": "Applications\\Driving License Apps\\FrmDrivers.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmDrivers.cs",
+              "RelativeToolTip": "Applications\\Driving License Apps\\FrmDrivers.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAA9wJwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T10:51:44.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FrmDrivers.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmDrivers.cs",
+              "RelativeDocumentMoniker": "Applications\\Driving License Apps\\FrmDrivers.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Driving License Apps\\FrmDrivers.cs [Design]",
+              "RelativeToolTip": "Applications\\Driving License Apps\\FrmDrivers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T10:50:36.011Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ctrlFindLicenseInfo.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlFindLicenseInfo.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrlFindLicenseInfo.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlFindLicenseInfo.cs",
+              "RelativeToolTip": "UserControls\\ctrlFindLicenseInfo.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T10:18:27.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ctrlFindLicenseInfo.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlFindLicenseInfo.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrlFindLicenseInfo.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlFindLicenseInfo.cs [Design]",
+              "RelativeToolTip": "UserControls\\ctrlFindLicenseInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T10:18:26.043Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FrmMngDetLcs.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmMngDetLcs.cs",
+              "RelativeDocumentMoniker": "Applications\\DetainLicense\\FrmMngDetLcs.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmMngDetLcs.cs",
+              "RelativeToolTip": "Applications\\DetainLicense\\FrmMngDetLcs.cs",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAgwPUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T10:16:13.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmMngDetLcs.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmMngDetLcs.cs",
+              "RelativeDocumentMoniker": "Applications\\DetainLicense\\FrmMngDetLcs.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmMngDetLcs.cs [Design]",
+              "RelativeToolTip": "Applications\\DetainLicense\\FrmMngDetLcs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T10:16:12.5Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmReleaseDetained.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmReleaseDetained.cs",
+              "RelativeDocumentMoniker": "Applications\\DetainLicense\\FrmReleaseDetained.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmReleaseDetained.cs [Design]",
+              "RelativeToolTip": "Applications\\DetainLicense\\FrmReleaseDetained.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T10:13:11.205Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmReleaseDetained.cs",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmReleaseDetained.cs",
+              "RelativeDocumentMoniker": "Applications\\DetainLicense\\FrmReleaseDetained.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmReleaseDetained.cs",
+              "RelativeToolTip": "Applications\\DetainLicense\\FrmReleaseDetained.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAYwLEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T09:03:44.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmDetainLc.cs [Design]",
+              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmDetainLc.cs",
+              "RelativeDocumentMoniker": "Applications\\DetainLicense\\FrmDetainLc.cs",
+              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\DetainLicense\\FrmDetainLc.cs [Design]",
+              "RelativeToolTip": "Applications\\DetainLicense\\FrmDetainLc.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T08:59:28.721Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\MainForm\\Form1.cs",
               "RelativeDocumentMoniker": "MainForm\\Form1.cs",
@@ -228,40 +299,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-09T20:35:42.54Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FrmRenewDLc.cs [Design]",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Renew Driving License\\FrmRenewDLc.cs",
-              "RelativeDocumentMoniker": "Applications\\Renew Driving License\\FrmRenewDLc.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\Renew Driving License\\FrmRenewDLc.cs [Design]",
-              "RelativeToolTip": "Applications\\Renew Driving License\\FrmRenewDLc.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T07:28:11.098Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FrmInterLicenseApp.cs [Design]",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\InternationalDriving License\\FrmInterLicenseApp.cs",
-              "RelativeDocumentMoniker": "Applications\\InternationalDriving License\\FrmInterLicenseApp.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\InternationalDriving License\\FrmInterLicenseApp.cs [Design]",
-              "RelativeToolTip": "Applications\\InternationalDriving License\\FrmInterLicenseApp.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T07:27:00.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ctrlInterDLInfo.cs [Design]",
-              "DocumentMoniker": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlInterDLInfo.cs",
-              "RelativeDocumentMoniker": "UserControls\\ctrlInterDLInfo.cs",
-              "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\UserControls\\ctrlInterDLInfo.cs [Design]",
-              "RelativeToolTip": "UserControls\\ctrlInterDLInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T21:44:53.245Z"
             }
           ]
         }

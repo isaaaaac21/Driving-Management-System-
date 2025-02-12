@@ -52,6 +52,18 @@
     <Compile Include="Applications\DetainLicense\FrmDetainLc.Designer.cs">
       <DependentUpon>FrmDetainLc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\DetainLicense\FrmMngDetLcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\DetainLicense\FrmMngDetLcs.Designer.cs">
+      <DependentUpon>FrmMngDetLcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\DetainLicense\FrmReleaseDetained.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\DetainLicense\FrmReleaseDetained.Designer.cs">
+      <DependentUpon>FrmReleaseDetained.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\Driving License Apps\FrmDrivers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +279,12 @@
     </Compile>
     <EmbeddedResource Include="Applications\DetainLicense\FrmDetainLc.resx">
       <DependentUpon>FrmDetainLc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\DetainLicense\FrmMngDetLcs.resx">
+      <DependentUpon>FrmMngDetLcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\DetainLicense\FrmReleaseDetained.resx">
+      <DependentUpon>FrmReleaseDetained.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\Driving License Apps\FrmDrivers.resx">
       <DependentUpon>FrmDrivers.cs</DependentUpon>
@@ -669,6 +687,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Stop2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fusers.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

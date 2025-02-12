@@ -130,5 +130,23 @@ namespace DVLD_Driving_License_Managemet
             FrmDetainLc FrmDetLc = new FrmDetainLc();
             FrmDetLc.ShowDialog(); 
         }
+
+        private void tsmMngDetLcs_Click(object sender, EventArgs e)
+        {
+            FrmMngDetLcs frmMngDetains = new FrmMngDetLcs();
+            frmMngDetains.ShowDialog();
+        }
+
+        private void tsmReleaseLc_Click(object sender, EventArgs e)
+        {
+            FrmReleaseDetained frmRel = new FrmReleaseDetained();
+            frmRel.ShowDialog(); 
+        }
+
+        private void tsmReleaseDet_Click(object sender, EventArgs e)
+        {
+            FrmReleaseDetained frmRelDet = new FrmReleaseDetained();
+            frmRelDet.ShowDialog();
+        }
     }
 }
