@@ -7,23 +7,23 @@
       "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:managepeople\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\internationaldriving license\\frminterlicenseapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\internationaldriving license\\frminterlicenseapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\internationaldriving license\\frminterlicenseapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\internationaldriving license\\frminterlicenseapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\internationaldriving license\\frminterlicenseapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\internationaldriving license\\frminterlicenseapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\internationaldriving license\\frminterlcinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\internationaldriving license\\frminterlcinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\internationaldriving license\\frminterlcinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\managepeople\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\managepeople\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:managepeople\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|d:\\f things\\programming\\myproject\\dvld driving license managemet\\applications\\driving license apps\\frmndla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\applications\\driving license apps\\frmndla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8439526E-D7CA-4D30-B13C-889E88EC0B7B}|DVLD Driving License Managemet.csproj|solutionrelative:applications\\driving license apps\\frmndla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -89,8 +89,7 @@
               "RelativeToolTip": "Applications\\InternationalDriving License\\FrmInterLicenseApp.cs",
               "ViewState": "AgIAAL0AAAAAAAAAAAAhwJ8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T20:38:42.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T20:38:42.725Z"
             },
             {
               "$type": "Document",
@@ -101,8 +100,7 @@
               "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\InternationalDriving License\\FrmInterLicenseApp.cs [Design]",
               "RelativeToolTip": "Applications\\InternationalDriving License\\FrmInterLicenseApp.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T20:38:40.365Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-12T20:38:40.365Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\Applications\\InternationalDriving License\\FrmInterLcInfo.cs [Design]",
               "RelativeToolTip": "Applications\\InternationalDriving License\\FrmInterLcInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T20:38:39.53Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-12T20:38:39.53Z"
             },
             {
               "$type": "Document",
@@ -139,8 +136,7 @@
               "RelativeToolTip": "..\\DVLDataAccessLayer\\Application Data Access Classes\\clsLDLADataAccess.cs",
               "ViewState": "AgIAAJEAAAAAAAAAAAArwJ0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T19:55:09.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T19:55:09.451Z"
             },
             {
               "$type": "Document",
@@ -152,8 +148,7 @@
               "RelativeToolTip": "Applications\\Driving License Apps\\FrmNDLA.cs",
               "ViewState": "AgIAAGYBAAAAAAAAAAArwHMBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T19:54:52.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T19:54:52.758Z"
             },
             {
               "$type": "Document",
@@ -164,8 +159,7 @@
               "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\ManagePeople\\frmManagePeople.cs [Design]",
               "RelativeToolTip": "ManagePeople\\frmManagePeople.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T13:05:51.957Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-12T13:05:51.957Z"
             },
             {
               "$type": "Document",
@@ -177,8 +171,7 @@
               "RelativeToolTip": "MainForm\\Form1.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAcwFMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T11:16:55.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T11:16:55.514Z"
             },
             {
               "$type": "Document",
@@ -257,8 +250,7 @@
               "ToolTip": "D:\\F things\\Programming\\MyProject\\DVLD Driving License Managemet\\MainForm\\Form1.cs [Design]",
               "RelativeToolTip": "MainForm\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T20:35:42.54Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-09T20:35:42.54Z"
             }
           ]
         }
