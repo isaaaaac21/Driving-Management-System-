@@ -58,7 +58,7 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         private void _FilterDGVByTextBoxInput()
         {
             DataView DV = Dt.DefaultView;
-            if (_Filtering == "LDL_ID")
+            if (_Filtering == "LDL_ID" || _Filtering == "PassedTestCount")
             {
                 if (txtFilter.Text != "") DV.RowFilter = $"{_Filtering} = {txtFilter.Text}";
                 else DV.RowFilter = "";
@@ -116,7 +116,7 @@ namespace DVLD_Driving_License_Managemet.Applications.Driving_License_Apps
         }
         private void _PreventLettersInLDLAFilter(KeyPressEventArgs e)
         {
-            if (cbFilter.Text == "LDL_ID")
+            if (cbFilter.Text == "LDL_ID" || cbFilter.Text == "PassedTestCount")
             {
                 if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
                 {

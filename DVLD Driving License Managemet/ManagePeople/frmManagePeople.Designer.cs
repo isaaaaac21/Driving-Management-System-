@@ -33,17 +33,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvList = new System.Windows.Forms.DataGridView();
             this.cmsActionsList = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmShowDet = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.cmAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.cbFilter = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.btnClose1 = new System.Windows.Forms.Button();
-            this.cmShowDet = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmAdd = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmEdit = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAdd = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
@@ -67,7 +67,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.label1.Location = new System.Drawing.Point(363, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(252, 41);
@@ -103,10 +103,50 @@
             this.cmsActionsList.Name = "cmsActionsList";
             this.cmsActionsList.Size = new System.Drawing.Size(168, 126);
             // 
+            // cmShowDet
+            // 
+            this.cmShowDet.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.cmShowDet.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Details;
+            this.cmShowDet.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.cmShowDet.Name = "cmShowDet";
+            this.cmShowDet.Size = new System.Drawing.Size(167, 24);
+            this.cmShowDet.Text = "ShowDetails";
+            this.cmShowDet.Click += new System.EventHandler(this.cmShowDet_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(164, 6);
+            // 
+            // cmAdd
+            // 
+            this.cmAdd.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmAdd.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Add_person;
+            this.cmAdd.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.cmAdd.Name = "cmAdd";
+            this.cmAdd.Size = new System.Drawing.Size(167, 24);
+            this.cmAdd.Text = "Add New Person";
+            this.cmAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // cmEdit
+            // 
+            this.cmEdit.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmEdit.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Edit;
+            this.cmEdit.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.cmEdit.Name = "cmEdit";
+            this.cmEdit.Size = new System.Drawing.Size(167, 24);
+            this.cmEdit.Text = "Edit";
+            this.cmEdit.Click += new System.EventHandler(this.cmEdit_Click);
+            // 
+            // cmDelete
+            // 
+            this.cmDelete.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmDelete.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Delete;
+            this.cmDelete.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.cmDelete.Name = "cmDelete";
+            this.cmDelete.Size = new System.Drawing.Size(167, 24);
+            this.cmDelete.Text = "Delete";
+            this.cmDelete.Click += new System.EventHandler(this.cmDelete_Click);
             // 
             // cbFilter
             // 
@@ -182,46 +222,6 @@
             this.btnClose1.UseVisualStyleBackColor = true;
             this.btnClose1.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // cmShowDet
-            // 
-            this.cmShowDet.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.cmShowDet.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Details;
-            this.cmShowDet.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.cmShowDet.Name = "cmShowDet";
-            this.cmShowDet.Size = new System.Drawing.Size(167, 24);
-            this.cmShowDet.Text = "ShowDetails";
-            this.cmShowDet.Click += new System.EventHandler(this.cmShowDet_Click);
-            // 
-            // cmAdd
-            // 
-            this.cmAdd.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmAdd.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Add_person;
-            this.cmAdd.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.cmAdd.Name = "cmAdd";
-            this.cmAdd.Size = new System.Drawing.Size(167, 24);
-            this.cmAdd.Text = "Add New Person";
-            this.cmAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // cmEdit
-            // 
-            this.cmEdit.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmEdit.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Edit;
-            this.cmEdit.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.cmEdit.Name = "cmEdit";
-            this.cmEdit.Size = new System.Drawing.Size(167, 24);
-            this.cmEdit.Text = "Edit";
-            this.cmEdit.Click += new System.EventHandler(this.cmEdit_Click);
-            // 
-            // cmDelete
-            // 
-            this.cmDelete.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmDelete.Image = global::DVLD_Driving_License_Managemet.Properties.Resources.Delete;
-            this.cmDelete.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.cmDelete.Name = "cmDelete";
-            this.cmDelete.Size = new System.Drawing.Size(167, 24);
-            this.cmDelete.Text = "Delete";
-            this.cmDelete.Click += new System.EventHandler(this.cmDelete_Click);
-            // 
             // btnAdd
             // 
             this.btnAdd.BackgroundImage = global::DVLD_Driving_License_Managemet.Properties.Resources.Add_person;
@@ -261,6 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(977, 511);
             this.Controls.Add(this.txtFilter);
             this.Controls.Add(this.btnClose1);

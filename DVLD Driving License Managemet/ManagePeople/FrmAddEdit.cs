@@ -272,7 +272,7 @@ namespace DVLD_Driving_License_Managemet
 
         private void lkAddPhoto_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ofdImage.InitialDirectory = @"C:\";
+            ofdImage.InitialDirectory = @"D:\F things\Programming\Fundamentals\The final Project Images";
             ofdImage.Title = "Choose an Image";
             ofdImage.Filter = "Image Files (*.jpg;*.jpeg;*.png;*.bmp)|*.jpg;*.jpeg;*.png;*.bmp";
 
@@ -311,6 +311,7 @@ namespace DVLD_Driving_License_Managemet
                 _UpdateFilePath();
                 _ShowSuccessMessage("Save operation has been succeded :-)");
                 PersonAdded?.Invoke(person);
+                btnSave.Enabled = false; 
             }
             else
                 _ShowErrorMessage("Failed to Save");
