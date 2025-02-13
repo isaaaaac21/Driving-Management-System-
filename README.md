@@ -1,38 +1,42 @@
-# Driving License Management System
+# Driving License Management System (DVLD)
 
-## Overview
+## Project Overview
 
-The Driving License Management System is a Windows desktop application designed to manage the entire process of driving license issuance, applications, tests, and driver records. The application provides a structured and user-friendly interface for government authorities, driving schools, and administrators to efficiently handle licenses, tests, and applicant data.
+The Driving License Management System (DVLD) is a comprehensive software solution designed to automate and manage the issuance, renewal, replacement, and verification of driving licenses. The system ensures compliance with government regulations and improves service efficiency by offering multiple functionalities for both applicants and system administrators.
 
-## Key Features
+## Features
 
-1. **User Authentication & Management**
-    * Secure user login system to manage access control.
-    * Role-based access to ensure only authorized users can manage license-related tasks.
-    * Stores personal details of users and applicants, including nationality, contact information, and profile images.
+1. **License Issuance and Management**
+    * Issue new driving licenses based on eligibility and category.
+    * Renew existing licenses upon expiry.
+    * Issue replacements for lost or damaged licenses.
+    * Manage and store applicant data securely.
 
-2. **Driver & License Management**
-    * Register new drivers and maintain a record of their applications and issued licenses.
-    * Track license issuance, expiration, fees, and renewal processes.
-    * Support for different license classes, including age restrictions and validity duration.
-    * Manage detained licenses, fines, and release processes.
+2. **License Categories**
+    The system supports various license types, each with different age requirements, validity periods, and fees:
 
-3. **Application & Approval Workflow**
-    * Applicants can submit driving license applications through the system.
-    * Administrators can review, approve, or reject applications.
-    * Tracks application fees, status updates, and approval history.
+    * Motorcycle License (Small & Heavy)
+    * Regular Car License
+    * Commercial Vehicle License (Taxi/Limo)
+    * Agricultural Vehicle License
+    * Small & Medium Bus License
+    * Heavy Vehicle & Truck License
+    * International Driving License
 
-4. **Driving Test Scheduling & Results**
-    * Schedule and manage driving test appointments.
-    * Different test types (written, practical) with associated fees.
-    * Store and retrieve test results, allowing applicants to retake tests if necessary.
+3. **Application Process**
+    Applicants must:
 
-5. **Country & Nationality Support**
-    * Manages nationality and residency details for applicants.
-    * Integrated with country-based regulations for licensing.
+    * Submit an application with personal details and required documents.
+    * Pay application fees.
+    * Pass medical, theoretical, and practical driving tests.
+    * Receive an electronically issued license upon successful completion.
 
-## Technology Stack
+4. **Examination Management**
+    * Schedule and conduct vision tests.
+    * Conduct theoretical and practical driving tests.
+    * Record and store test results.
 
+<<<<<<< HEAD
 *   **Programming Language:** C# (.NET Framework)
 *   **UI Framework:** Windows Forms (WinForms)  
 *   **Database:** Microsoft SQL Server
